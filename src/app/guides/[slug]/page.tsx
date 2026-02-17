@@ -69,7 +69,6 @@ export default function GuideDetailPage({ params }: { params: { slug: string } }
 
   return (
     <>
-      {/* JSON-LD Structured Data for SEO */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
@@ -140,19 +139,19 @@ export default function GuideDetailPage({ params }: { params: { slug: string } }
         <div className="card p-5 mb-8 bg-gray-50/50">
           <h3 className="font-display font-bold text-sm text-gray-700 mb-3">📖 In This Guide</h3>
           <ul className="space-y-2">
-            <li className="flex items-center gap-2 text-sm text-gray-600 hover:text-blush-600 cursor-pointer">
+            <li className="flex items-center gap-2 text-sm text-gray-600">
               <span className="w-5 h-5 rounded-full bg-blush-100 text-blush-600 text-xs flex items-center justify-center font-bold">1</span>
               Why This Guide Matters
             </li>
-            <li className="flex items-center gap-2 text-sm text-gray-600 hover:text-blush-600 cursor-pointer">
+            <li className="flex items-center gap-2 text-sm text-gray-600">
               <span className="w-5 h-5 rounded-full bg-blush-100 text-blush-600 text-xs flex items-center justify-center font-bold">2</span>
               Key Takeaways
             </li>
-            <li className="flex items-center gap-2 text-sm text-gray-600 hover:text-blush-600 cursor-pointer">
+            <li className="flex items-center gap-2 text-sm text-gray-600">
               <span className="w-5 h-5 rounded-full bg-blush-100 text-blush-600 text-xs flex items-center justify-center font-bold">3</span>
               Expert Styling Tips
             </li>
-            <li className="flex items-center gap-2 text-sm text-gray-600 hover:text-blush-600 cursor-pointer">
+            <li className="flex items-center gap-2 text-sm text-gray-600">
               <span className="w-5 h-5 rounded-full bg-blush-100 text-blush-600 text-xs flex items-center justify-center font-bold">4</span>
               Shop the Complete Look
             </li>
@@ -178,7 +177,7 @@ export default function GuideDetailPage({ params }: { params: { slug: string } }
             <div className="not-prose my-6 bg-amber-50 border border-amber-200 rounded-xl p-4 text-center">
               <p className="text-sm font-bold text-amber-800">💡 Reader Favorite</p>
               <p className="text-xs text-amber-700 mt-1">
-                Our #{' '}1 pick: <strong>{guide.affiliateProducts[0].name}</strong> ({guide.affiliateProducts[0].price})
+                Our #1 pick: <strong>{guide.affiliateProducts[0].name}</strong> ({guide.affiliateProducts[0].price})
               </p>
               <a href={guide.affiliateProducts[0].url} target="_blank" rel="noopener noreferrer nofollow"
                 className="inline-block mt-2 bg-amber-500 hover:bg-amber-600 text-white text-xs font-bold px-4 py-1.5 rounded-lg transition-colors">
@@ -226,12 +225,12 @@ export default function GuideDetailPage({ params }: { params: { slug: string } }
               className="bg-[#E60023] text-white text-xs font-bold px-4 py-2 rounded-lg hover:bg-[#cc001f] transition-colors">
               📌 Save to Pinterest
             </a>
-            <button
-              className="bg-gray-800 text-white text-xs font-bold px-4 py-2 rounded-lg hover:bg-gray-900 transition-colors"
-              onClick={() => {}}
+            <a
+              href={`https://yss007895-code.github.io/stylemedaily-web/guides/${guide.slug}`}
+              className="bg-gray-800 text-white text-xs font-bold px-4 py-2 rounded-lg hover:bg-gray-900 transition-colors inline-block"
             >
-              📋 Copy Link
-            </button>
+              🔗 Share Guide
+            </a>
           </div>
         </div>
 
