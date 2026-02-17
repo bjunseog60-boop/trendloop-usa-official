@@ -15,7 +15,7 @@ export default function AboutPage() {
       <h2>Affiliate Disclosure</h2>
       <p>Some links on StyleMeDaily are affiliate links. This means we may earn a small commission if you purchase through our links, at no extra cost to you. This helps us keep creating free content. Our recommendations are never influenced by affiliate relationships.</p>
       <h2>Contact</h2>
-      <p>Questions or partnerships? Email us at <a href="mailto:hello@stylemedaily.com">hello@stylemedaily.com</a> or follow us on <a href="https://pinterest.com/stylemedaily" target="_blank" rel="noopener noreferrer">Pinterest</a> and <a href="https://instagram.com/stylemedaily" target="_blank" rel="noopener noreferrer">Instagram</a>.</p>
+      <p>Questions or partnerships? Email us at <a href="mailto:yss007895@gmail.com">yss007895@gmail.com</a> or follow us on <a href="https://pinterest.com/stylemedaily" target="_blank" rel="noopener noreferrer">Pinterest</a> and <a href="https://instagram.com/stylemedaily" target="_blank" rel="noopener noreferrer">Instagram</a>.</p>
     </div>
   );
 }

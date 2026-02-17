@@ -9,7 +9,7 @@ export default function PrivacyPage() {
     <div className="pt-8 max-w-3xl mx-auto prose-style">
       <h1 className="font-display text-3xl font-extrabold text-gray-900 mb-2">Privacy Policy</h1>
       <p className="text-sm text-gray-400 mb-8">Last updated: February 17, 2026</p>
-      <p>StyleMeDaily (&quot;we&quot;) respects your privacy. This policy explains how we collect, use, and protect your data when you visit stylemedaily.com.</p>
+      <p>StyleMeDaily (&quot;we&quot;) respects your privacy. This policy explains how we collect, use, and protect your data when you visit our site.</p>
       <h2>Information We Collect</h2>
       <p>We may collect: email address (newsletter subscription), usage data via analytics (pages visited, referral sources), cookies for analytics and advertising, and information from contact forms.</p>
       <h2>How We Use Your Information</h2>
@@ -21,7 +21,7 @@ export default function PrivacyPage() {
       <h2>Your Rights</h2>
       <p>You can access, correct, or delete your data, unsubscribe from our newsletter, and opt out of personalized ads at any time.</p>
       <h2>Contact</h2>
-      <p>Privacy questions: <a href="mailto:privacy@stylemedaily.com">privacy@stylemedaily.com</a></p>
+      <p>Privacy questions: <a href="mailto:yss007895@gmail.com">yss007895@gmail.com</a></p>
     </div>
   );
 }

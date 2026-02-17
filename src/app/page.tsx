@@ -21,7 +21,7 @@ export default function HomePage() {
     ],
     contactPoint: {
       '@type': 'ContactPoint',
-      email: 'hello@stylemedaily.com',
+      email: 'yss007895@gmail.com',
       contactType: 'customer service',
     },
   };

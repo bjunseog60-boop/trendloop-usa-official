@@ -7,7 +7,7 @@ User-agent: *
 Disallow: /api/
 
 # Host
-Host: https://stylemedaily.com
+Host: https://yss007895-code.github.io/stylemedaily-web
 
 # Sitemaps
-Sitemap: https://stylemedaily.com/sitemap.xml
+Sitemap: https://yss007895-code.github.io/stylemedaily-web/sitemap.xml

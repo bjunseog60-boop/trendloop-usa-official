@@ -1,6 +1,6 @@
 /** @type {import('next-sitemap').IConfig} */
 module.exports = {
-  siteUrl: 'https://stylemedaily.com',
+  siteUrl: 'https://yss007895-code.github.io/stylemedaily-web',
   generateRobotsTxt: true,
   changefreq: 'weekly',
   priority: 0.7,

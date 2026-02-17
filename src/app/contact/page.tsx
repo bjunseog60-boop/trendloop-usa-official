@@ -11,8 +11,8 @@ export default function ContactPage() {
       <p className="text-gray-500 mb-10">We&apos;d love to hear from you!</p>
       <div className="grid md:grid-cols-2 gap-4">
         {[
-          { icon: '📧', title: 'General', email: 'hello@stylemedaily.com' },
-          { icon: '🤝', title: 'Partnerships', email: 'partners@stylemedaily.com' },
+          { icon: '📧', title: 'General', email: 'yss007895@gmail.com' },
+          { icon: '🤝', title: 'Partnerships', email: 'yss007895@gmail.com' },
           { icon: '📌', title: 'Pinterest', email: '@stylemedaily' },
           { icon: '📸', title: 'Instagram', email: '@stylemedaily' },
         ].map((c, i) => (
