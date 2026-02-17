@@ -10,6 +10,9 @@ export const metadata: Metadata = {
   verification: {
     google: 'v9fb-JiTMvkHcxCMF',
   },
+  other: {
+    'p:domain_verify': 'c4d58b4c8b49f1f1f37420d23dc4b510',
+  },
   openGraph: {
     type: 'website', locale: 'en_US', url: 'https://stylemedaily.com', siteName: 'StyleMeDaily',
     title: 'StyleMeDaily – Personal Style Guides for Every Woman',
