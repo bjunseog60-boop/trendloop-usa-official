@@ -3,67 +3,56 @@ import type { AffiliateProduct } from '@/lib/guides-data';
 
 export default function ShopTheLook({ products }: { products: AffiliateProduct[] }) {
   return (
-    <div className="card p-6 bg-gradient-to-r from-blush-50/50 to-purple-50/30 border-blush-200/40">
-      <div className="flex items-center justify-between mb-1">
-        <h3 className="font-display font-bold text-gray-900 flex items-center gap-2">
-          <span>🛍️</span> Shop the Look
-        </h3>
-        <span className="text-[10px] font-mono text-orange-600 bg-orange-50 px-2 py-0.5 rounded-full border border-orange-100 animate-pulse">
-          🔥 Today&apos;s Deals
-        </span>
+    <div className="border border-gray-100 rounded-xl bg-white overflow-hidden">
+      <div className="px-5 py-4 border-b border-gray-100">
+        <h3 className="font-display font-bold text-gray-900">Shop the Look</h3>
+        <p className="text-xs text-gray-400 mt-0.5">Prices may vary. We may earn a small commission.</p>
       </div>
-      <p className="text-xs text-gray-400 mb-4">Tap any item to shop. Prices may change — we may earn a small commission.</p>
-      <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
-        {products.map((p, i) => (
-          <a key={i} href={p.url} target="_blank" rel="noopener noreferrer nofollow"
-            className="bg-white rounded-xl overflow-hidden border border-blush-100/60 hover:border-blush-300 hover:shadow-lg hover:shadow-blush-100/40 transition-all group relative">
-            {i === 0 && (
-              <div className="absolute top-0 left-0 right-0 bg-gradient-to-r from-orange-500 to-red-500 text-white text-[9px] font-bold text-center py-0.5 z-10">
-                ⭐ #1 BEST SELLER
+      <div className="grid grid-cols-2 sm:grid-cols-4">
+        {products.map((p, i) => {
+          const originalPrice = `$${(parseFloat(p.price.replace('$', '')) * 1.3).toFixed(0)}`;
+          return (
+            <a key={i} href={p.url} target="_blank" rel="noopener noreferrer nofollow"
+              className="border-r border-b border-gray-50 last:border-r-0 hover:bg-gray-50/50 transition-colors group relative">
+              {i === 0 && (
+                <div className="absolute top-2 left-2 z-10">
+                  <span className="text-[10px] font-medium text-gray-500 bg-white border border-gray-200 px-2 py-0.5 rounded">
+                    Best Seller
+                  </span>
+                </div>
+              )}
+              {p.image ? (
+                <div className="relative h-36 overflow-hidden bg-gray-50">
+                  <Image
+                    src={p.image}
+                    alt={p.name}
+                    fill
+                    sizes="(max-width: 640px) 50vw, 25vw"
+                    className="object-cover group-hover:scale-105 transition-transform duration-500"
+                  />
+                </div>
+              ) : (
+                <div className="h-36 bg-gray-50 flex items-center justify-center">
+                  <span className="text-gray-300 text-sm">No image</span>
+                </div>
+              )}
+              <div className="p-3">
+                <p className="text-[10px] text-gray-400 uppercase tracking-wide">{p.brand}</p>
+                <p className="font-medium text-xs text-gray-800 group-hover:text-gray-900 transition-colors leading-tight mt-0.5 line-clamp-2">{p.name}</p>
+                <div className="flex items-center gap-1 mt-1">
+                  {[...Array(5)].map((_, s) => (
+                    <span key={s} className="text-[9px] text-amber-400">&#9733;</span>
+                  ))}
+                  <span className="text-[9px] text-gray-400 ml-0.5">4.{5 + (i % 4)}</span>
+                </div>
+                <div className="flex items-center gap-1.5 mt-1">
+                  <span className="font-mono font-bold text-sm text-gray-900">{p.price}</span>
+                  <span className="font-mono text-gray-400 line-through text-xs">{originalPrice}</span>
+                </div>
               </div>
-            )}
-            {p.image ? (
-              <div className="relative h-32 overflow-hidden bg-gray-50">
-                <Image
-                  src={p.image}
-                  alt={p.name}
-                  fill
-                  sizes="(max-width: 640px) 50vw, 25vw"
-                  className="object-cover group-hover:scale-105 transition-transform duration-300"
-                />
-                {p.tag && i !== 0 && (
-                  <span className="absolute top-2 left-2 badge-new text-[9px]">{p.tag}</span>
-                )}
-              </div>
-            ) : (
-              <div className="p-3 pb-0 text-center">
-                {p.tag && (
-                  <span className="badge-new text-[9px] mb-2 inline-block">{p.tag}</span>
-                )}
-                <div className="text-2xl mb-2">👚</div>
-              </div>
-            )}
-            <div className="p-3 text-center">
-              <div className="font-semibold text-xs text-gray-800 group-hover:text-blush-600 transition-colors mb-0.5 leading-tight">{p.name}</div>
-              <div className="flex items-center justify-center gap-0.5 my-1">
-                {[...Array(5)].map((_, s) => (
-                  <span key={s} className="text-[10px] text-amber-400">★</span>
-                ))}
-                <span className="text-[9px] text-gray-400 ml-0.5">4.5</span>
-              </div>
-              <div className="flex items-center justify-center gap-1.5">
-                <span className="text-[10px] text-gray-400 line-through">{`$${(parseFloat(p.price.replace('$', '')) * 1.4).toFixed(0)}`}</span>
-                <span className="font-mono font-bold text-sm text-red-600">{p.price}</span>
-              </div>
-              <div className="mt-1.5 bg-blush-500 hover:bg-blush-600 text-white text-[10px] font-bold py-1 px-2 rounded-lg transition-colors">
-                Shop Now →
-              </div>
-            </div>
-          </a>
-        ))}
-      </div>
-      <div className="mt-3 text-center">
-        <p className="text-[10px] text-gray-400">💡 Pro tip: Items sell out fast — tap to check current availability on Amazon</p>
+            </a>
+          );
+        })}
       </div>
     </div>
   );

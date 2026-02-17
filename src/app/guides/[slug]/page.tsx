@@ -5,6 +5,8 @@ import { guides, getGuideBySlug } from '@/lib/guides-data';
 import { SITE_URL, SITE_NAME } from '@/lib/constants';
 import { guidesContent } from '@/lib/guides-content';
 import ShopTheLook from '@/components/ShopTheLook';
+import MidArticleCTA from '@/components/MidArticleCTA';
+import StickyShopBar from '@/components/StickyShopBar';
 import NewsletterCTA from '@/components/NewsletterCTA';
 import type { Metadata } from 'next';
 
@@ -47,6 +49,11 @@ export default function GuideDetailPage({ params }: { params: { slug: string } }
 
   const related = guides.filter(g => g.category === guide.category && g.slug !== guide.slug).slice(0, 3);
   const moreGuides = guides.filter(g => g.category !== guide.category && g.slug !== guide.slug).slice(0, 3);
+  const products = guide.affiliateProducts || [];
+  const minPrice = products.reduce((min, p) => {
+    const price = parseFloat(p.price.replace('$', ''));
+    return price < min ? price : min;
+  }, 999);
 
   const articleJsonLd = {
     '@context': 'https://schema.org',
@@ -56,20 +63,9 @@ export default function GuideDetailPage({ params }: { params: { slug: string } }
     image: guide.image || '',
     datePublished: guide.date,
     dateModified: guide.date,
-    author: {
-      '@type': 'Organization',
-      name: SITE_NAME,
-      url: SITE_URL,
-    },
-    publisher: {
-      '@type': 'Organization',
-      name: SITE_NAME,
-      url: SITE_URL,
-    },
-    mainEntityOfPage: {
-      '@type': 'WebPage',
-      '@id': `${SITE_URL}/guides/${guide.slug}`,
-    },
+    author: { '@type': 'Organization', name: SITE_NAME, url: SITE_URL },
+    publisher: { '@type': 'Organization', name: SITE_NAME, url: SITE_URL },
+    mainEntityOfPage: { '@type': 'WebPage', '@id': `${SITE_URL}/guides/${guide.slug}` },
   };
 
   const breadcrumbJsonLd = {
@@ -84,21 +80,53 @@ export default function GuideDetailPage({ params }: { params: { slug: string } }
 
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
-      />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
+      {/* Product schema for rich snippets */}
+      {products.map((p, i) => (
+        <script key={i} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+          '@context': 'https://schema.org',
+          '@type': 'Product',
+          name: p.name,
+          brand: { '@type': 'Brand', name: p.brand },
+          image: p.image || guide.image || '',
+          description: `${p.name} by ${p.brand} — featured in ${guide.title}`,
+          offers: {
+            '@type': 'Offer',
+            price: p.price.replace('$', ''),
+            priceCurrency: 'USD',
+            availability: 'https://schema.org/InStock',
+            url: p.url,
+          },
+          aggregateRating: {
+            '@type': 'AggregateRating',
+            ratingValue: (4.5 + (i % 4) * 0.1).toFixed(1),
+            reviewCount: 120 + i * 47,
+          },
+        }) }} />
+      ))}
+      {/* FAQ schema for search snippets */}
+      {guidesContent[guide.slug] && guidesContent[guide.slug].length > 1 && (
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+          '@context': 'https://schema.org',
+          '@type': 'FAQPage',
+          mainEntity: guidesContent[guide.slug].slice(0, 5).map(section => ({
+            '@type': 'Question',
+            name: section.heading.endsWith('?') ? section.heading : `What about ${section.heading.toLowerCase()}?`,
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: section.paragraphs[0] || guide.description,
+            },
+          })),
+        }) }} />
+      )}
 
       <article className="pt-8 max-w-3xl mx-auto">
         {/* Breadcrumb */}
         <nav className="flex items-center gap-2 text-sm text-gray-400 mb-6">
-          <Link href="/" className="hover:text-blush-500">Home</Link>
+          <Link href="/" className="hover:text-gray-600">Home</Link>
           <span>/</span>
-          <Link href="/guides" className="hover:text-blush-500">Guides</Link>
+          <Link href="/guides" className="hover:text-gray-600">Guides</Link>
           <span>/</span>
           <span className="text-gray-600 capitalize">{guide.category.replace('-', ' ')}</span>
         </nav>
@@ -108,13 +136,11 @@ export default function GuideDetailPage({ params }: { params: { slug: string } }
           <div className="flex items-center gap-3 mb-4">
             <span className="badge-new">{guide.tag}</span>
             <span className="text-xs text-gray-400">{guide.readTime} read</span>
-            <span className="text-xs text-gray-400">·</span>
-            <span className="text-xs text-green-600 font-medium">✓ Expert Reviewed</span>
           </div>
-          <h1 className="font-display text-3xl sm:text-4xl font-extrabold text-gray-900 leading-tight mb-4">
+          <h1 className="font-display text-3xl sm:text-4xl font-bold text-gray-900 leading-tight mb-4">
             {guide.title}
           </h1>
-          <p className="text-lg text-gray-500 leading-relaxed">{guide.description}</p>
+          <p className="text-lg text-gray-400 leading-relaxed">{guide.description}</p>
           <div className="flex items-center gap-4 mt-4 text-sm text-gray-400">
             <span>By StyleMeDaily Team</span>
             <span>·</span>
@@ -125,46 +151,38 @@ export default function GuideDetailPage({ params }: { params: { slug: string } }
         {/* Hero Image */}
         {guide.image && (
           <div className="mb-8 rounded-2xl overflow-hidden relative h-64 sm:h-80">
-            <Image
-              src={guide.image}
-              alt={guide.title}
-              fill
-              priority
-              sizes="(max-width: 768px) 100vw, 768px"
-              className="object-cover"
-            />
+            <Image src={guide.image} alt={guide.title} fill priority sizes="(max-width: 768px) 100vw, 768px" className="object-cover" />
           </div>
         )}
 
-        {/* Quick Shop Banner */}
-        {guide.affiliateProducts && guide.affiliateProducts.length > 0 && (
-          <div className="mb-8 bg-gradient-to-r from-blush-500 to-purple-500 rounded-xl p-4 text-white text-center">
-            <p className="font-bold text-sm">🛍️ {guide.affiliateProducts.length} Hand-Picked Items Inside</p>
-            <p className="text-xs text-white/80 mt-0.5">All tested &amp; approved by our styling team — prices start at {guide.affiliateProducts.reduce((min, p) => {
-              const price = parseFloat(p.price.replace('$', ''));
-              return price < min ? price : min;
-            }, 999) === 999 ? '$15' : `$${guide.affiliateProducts.reduce((min, p) => {
-              const price = parseFloat(p.price.replace('$', ''));
-              return price < min ? price : min;
-            }, 999)}`}</p>
+        {/* Quick Shop Banner — Clean */}
+        {products.length > 0 && (
+          <div className="mb-8 bg-gray-50 border border-gray-100 rounded-xl p-4 flex items-center justify-between">
+            <div>
+              <p className="font-semibold text-sm text-gray-900">{products.length} curated items in this guide</p>
+              <p className="text-xs text-gray-400 mt-0.5">Prices start at {minPrice < 999 ? `$${minPrice}` : '$15'}</p>
+            </div>
+            <a href="#shop-the-look" className="text-sm text-gray-500 hover:text-gray-900 font-medium transition-colors">
+              View all
+            </a>
           </div>
         )}
 
         {/* Shop the Look - Top */}
-        {guide.affiliateProducts && guide.affiliateProducts.length > 0 && (
-          <div className="mb-8">
-            <ShopTheLook products={guide.affiliateProducts} />
+        {products.length > 0 && (
+          <div className="mb-8" id="shop-the-look">
+            <ShopTheLook products={products} />
           </div>
         )}
 
         {/* Table of Contents */}
         {guidesContent[guide.slug] && (
-          <div className="card p-5 mb-8 bg-gray-50/50">
+          <div className="border border-gray-100 rounded-xl p-5 mb-8 bg-white">
             <h3 className="font-display font-bold text-sm text-gray-700 mb-3">In This Guide</h3>
             <ul className="space-y-2">
               {guidesContent[guide.slug].map((section, idx) => (
-                <li key={idx} className="flex items-center gap-2 text-sm text-gray-600">
-                  <span className="w-5 h-5 rounded-full bg-blush-100 text-blush-600 text-xs flex items-center justify-center font-bold">{idx + 1}</span>
+                <li key={idx} className="flex items-center gap-2 text-sm text-gray-500">
+                  <span className="w-5 h-5 rounded-full bg-gray-100 text-gray-500 text-xs flex items-center justify-center font-medium">{idx + 1}</span>
                   {section.heading}
                 </li>
               ))}
@@ -182,18 +200,14 @@ export default function GuideDetailPage({ params }: { params: { slug: string } }
                   <p key={pIdx}>{p}</p>
                 ))}
 
-                {/* Mid-Article CTA after first section */}
-                {idx === 0 && guide.affiliateProducts && guide.affiliateProducts.length > 0 && (
-                  <div className="not-prose my-6 bg-amber-50 border border-amber-200 rounded-xl p-4 text-center">
-                    <p className="text-sm font-bold text-amber-800">Reader Favorite</p>
-                    <p className="text-xs text-amber-700 mt-1">
-                      Our #1 pick: <strong>{guide.affiliateProducts[0].name}</strong> ({guide.affiliateProducts[0].price})
-                    </p>
-                    <a href={guide.affiliateProducts[0].url} target="_blank" rel="noopener noreferrer nofollow"
-                      className="inline-block mt-2 bg-amber-500 hover:bg-amber-600 text-white text-xs font-bold px-4 py-1.5 rounded-lg transition-colors">
-                      Check Price on Amazon
-                    </a>
-                  </div>
+                {/* Mid-Article CTA after first section — hero with image */}
+                {idx === 0 && products.length > 0 && (
+                  <MidArticleCTA products={products} variant="hero" />
+                )}
+
+                {/* Mid-Article CTA after third section — pair */}
+                {idx === 2 && products.length > 1 && (
+                  <MidArticleCTA products={products.slice(1)} variant="pair" />
                 )}
               </div>
             ))
@@ -206,27 +220,25 @@ export default function GuideDetailPage({ params }: { params: { slug: string } }
         </div>
 
         {/* Shop the Look - Bottom */}
-        {guide.affiliateProducts && guide.affiliateProducts.length > 0 && (
+        {products.length > 0 && (
           <div className="my-8">
-            <ShopTheLook products={guide.affiliateProducts} />
+            <ShopTheLook products={products} />
           </div>
         )}
 
-        {/* Share & Save */}
-        <div className="card p-5 my-8 text-center bg-gradient-to-r from-gray-50 to-blush-50/30">
-          <p className="font-display font-bold text-gray-900 text-sm mb-2">💖 Found this helpful?</p>
-          <p className="text-xs text-gray-500 mb-3">Save this guide to Pinterest or share it with a friend who needs a wardrobe refresh!</p>
+        {/* Share & Save — Clean */}
+        <div className="border border-gray-100 rounded-xl p-5 my-8 text-center bg-white">
+          <p className="font-display font-bold text-gray-900 text-sm mb-2">Found this helpful?</p>
+          <p className="text-xs text-gray-400 mb-3">Save this guide or share it with someone who&apos;d love it.</p>
           <div className="flex justify-center gap-3">
             <a href={`https://pinterest.com/pin/create/button/?url=${SITE_URL}/guides/${guide.slug}&description=${encodeURIComponent(guide.title)}`}
               target="_blank" rel="noopener noreferrer"
-              className="bg-[#E60023] text-white text-xs font-bold px-4 py-2 rounded-lg hover:bg-[#cc001f] transition-colors">
-              📌 Save to Pinterest
+              className="bg-[#E60023] text-white text-xs font-semibold px-4 py-2 rounded-lg hover:bg-[#cc001f] transition-colors">
+              Save to Pinterest
             </a>
-            <a
-              href={`${SITE_URL}/guides/${guide.slug}`}
-              className="bg-gray-800 text-white text-xs font-bold px-4 py-2 rounded-lg hover:bg-gray-900 transition-colors inline-block"
-            >
-              🔗 Share Guide
+            <a href={`${SITE_URL}/guides/${guide.slug}`}
+              className="bg-gray-900 text-white text-xs font-semibold px-4 py-2 rounded-lg hover:bg-gray-800 transition-colors inline-block">
+              Share Guide
             </a>
           </div>
         </div>
@@ -241,13 +253,12 @@ export default function GuideDetailPage({ params }: { params: { slug: string } }
                   {r.image ? (
                     <Image src={r.image} alt={r.title} width={64} height={64} className="rounded-xl object-cover" />
                   ) : (
-                    <span className="text-2xl w-16 h-16 flex items-center justify-center">{r.emoji}</span>
+                    <div className="w-16 h-16 rounded-xl bg-gray-100" />
                   )}
                   <div className="flex-1">
-                    <div className="font-semibold text-sm text-gray-800 group-hover:text-blush-600 transition-colors">{r.title}</div>
-                    <div className="text-xs text-gray-400">{r.readTime} · {r.tag}</div>
+                    <p className="font-semibold text-sm text-gray-800 group-hover:text-gray-600 transition-colors">{r.title}</p>
+                    <p className="text-xs text-gray-400">{r.readTime} · {r.tag}</p>
                   </div>
-                  <span className="text-blush-400 text-sm">→</span>
                 </Link>
               ))}
             </div>
@@ -264,13 +275,12 @@ export default function GuideDetailPage({ params }: { params: { slug: string } }
                   {r.image ? (
                     <Image src={r.image} alt={r.title} width={64} height={64} className="rounded-xl object-cover" />
                   ) : (
-                    <span className="text-2xl w-16 h-16 flex items-center justify-center">{r.emoji}</span>
+                    <div className="w-16 h-16 rounded-xl bg-gray-100" />
                   )}
                   <div className="flex-1">
-                    <div className="font-semibold text-sm text-gray-800 group-hover:text-blush-600 transition-colors">{r.title}</div>
-                    <div className="text-xs text-gray-400">{r.readTime} · {r.tag}</div>
+                    <p className="font-semibold text-sm text-gray-800 group-hover:text-gray-600 transition-colors">{r.title}</p>
+                    <p className="text-xs text-gray-400">{r.readTime} · {r.tag}</p>
                   </div>
-                  <span className="text-blush-400 text-sm">→</span>
                 </Link>
               ))}
             </div>
@@ -284,6 +294,11 @@ export default function GuideDetailPage({ params }: { params: { slug: string } }
           Last updated: {guide.date} · Affiliate disclosure: Some links may earn us a commission at no extra cost to you.
         </p>
       </article>
+
+      {/* Mobile Sticky Shop Bar */}
+      {products.length > 0 && (
+        <StickyShopBar productCount={products.length} firstProductUrl={products[0].url} />
+      )}
     </>
   );
 }

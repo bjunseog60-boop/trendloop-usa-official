@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: { default: 'StyleMeDaily – Personal Style Guides for Every Woman', template: '%s | StyleMeDaily' },
   description: SITE_DESCRIPTION,
-  keywords: ['personal stylist', 'fashion guide', 'outfit ideas', 'capsule wardrobe', 'what to wear', 'style tips women'],
+  keywords: ['personal stylist', 'fashion guide', 'outfit ideas', 'capsule wardrobe', 'what to wear', 'style tips women', 'women fashion 2026', 'affordable fashion', 'work outfits', 'date night outfits', 'spring fashion trends'],
   verification: {
     google: 'v9fb-JiTMvkHcxCMF',
   },

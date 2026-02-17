@@ -15,34 +15,62 @@
 
 @layer components {
   .card {
-    @apply bg-white rounded-2xl border border-blush-100/60 shadow-sm;
+    @apply bg-white rounded-2xl border border-gray-100 shadow-sm;
   }
   .card-hover {
-    @apply card hover:border-blush-300/50 hover:shadow-md hover:shadow-blush-100/40 transition-all duration-300;
+    @apply card hover:border-gray-200 hover:shadow-md transition-all duration-300;
   }
   .gradient-text {
     @apply bg-gradient-to-r from-blush-500 to-purple-500 bg-clip-text text-transparent;
   }
   .btn-primary {
-    @apply bg-gradient-to-r from-blush-500 to-purple-500 text-white font-body font-semibold px-6 py-3 rounded-xl shadow-lg shadow-blush-500/20 hover:shadow-blush-500/35 hover:-translate-y-0.5 transition-all duration-200;
+    @apply bg-gray-900 text-white font-body font-semibold px-6 py-3 rounded-xl hover:bg-gray-800 transition-all duration-200;
   }
   .btn-secondary {
-    @apply bg-white border border-blush-200 text-gray-600 font-body font-semibold px-6 py-3 rounded-xl hover:bg-blush-50 hover:border-blush-300 transition-all duration-200;
+    @apply bg-white border border-gray-200 text-gray-600 font-body font-semibold px-6 py-3 rounded-xl hover:bg-gray-50 hover:border-gray-300 transition-all duration-200;
   }
   .badge {
-    @apply inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-semibold;
+    @apply inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium;
   }
   .badge-new {
-    @apply badge bg-emerald-50 text-emerald-600 border border-emerald-100;
+    @apply badge bg-gray-50 text-gray-600 border border-gray-200;
   }
   .badge-hot {
     @apply badge bg-rose-50 text-rose-600 border border-rose-100;
   }
   .badge-category {
-    @apply badge bg-blush-50 text-blush-600 border border-blush-100;
+    @apply badge bg-gray-50 text-gray-500 border border-gray-200;
   }
   .section-title {
     @apply font-display text-2xl sm:text-3xl font-bold text-gray-900;
+  }
+
+  /* Product card styles */
+  .product-card {
+    @apply bg-white rounded-xl border border-gray-100 overflow-hidden transition-all duration-300;
+  }
+  .product-card:hover {
+    @apply border-gray-200 shadow-md;
+  }
+  .product-card:hover .product-card-action {
+    @apply opacity-100;
+  }
+  .price-current {
+    @apply font-mono font-bold text-gray-900;
+  }
+  .price-original {
+    @apply font-mono text-gray-400 line-through text-sm;
+  }
+  .urgency-text {
+    @apply text-xs text-rose-600 font-medium;
+  }
+
+  /* Tab styles */
+  .tab-active {
+    @apply text-gray-900 border-b-2 border-gray-900;
+  }
+  .tab-inactive {
+    @apply text-gray-400 hover:text-gray-600 border-b-2 border-transparent;
   }
 
   .prose-style h2 {
@@ -55,18 +83,18 @@
     @apply text-gray-600 leading-relaxed mb-4;
   }
   .prose-style a {
-    @apply text-blush-600 hover:text-blush-700 underline underline-offset-2;
+    @apply text-gray-900 hover:text-blush-600 underline underline-offset-2;
   }
   .prose-style blockquote {
-    @apply border-l-4 border-blush-300 bg-blush-50/50 px-6 py-4 rounded-r-xl my-6 italic;
+    @apply border-l-4 border-gray-200 bg-gray-50 px-6 py-4 rounded-r-xl my-6 italic;
   }
   .prose-style table {
     @apply w-full border-collapse mb-6;
   }
   .prose-style th {
-    @apply bg-blush-50 text-blush-700 font-mono text-sm font-semibold px-4 py-3 text-left border-b-2 border-blush-100;
+    @apply bg-gray-50 text-gray-700 font-mono text-sm font-semibold px-4 py-3 text-left border-b-2 border-gray-200;
   }
   .prose-style td {
-    @apply px-4 py-3 text-sm text-gray-600 border-b border-blush-50;
+    @apply px-4 py-3 text-sm text-gray-600 border-b border-gray-100;
   }
 }

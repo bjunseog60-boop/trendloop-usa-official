@@ -489,3 +489,55 @@ export function getGuidesByCategory(category: string) {
   if (category === 'all') return guides;
   return guides.filter(g => g.category === category);
 }
+
+/** Extract all products from all guides, deduplicated by name+brand */
+export function getAllProducts(): (AffiliateProduct & { fromGuide: string; fromGuideSlug: string })[] {
+  const seen = new Set<string>();
+  const products: (AffiliateProduct & { fromGuide: string; fromGuideSlug: string })[] = [];
+  for (const guide of guides) {
+    if (!guide.affiliateProducts) continue;
+    for (const p of guide.affiliateProducts) {
+      const key = `${p.name}|${p.brand}`;
+      if (seen.has(key)) continue;
+      seen.add(key);
+      products.push({ ...p, fromGuide: guide.title, fromGuideSlug: guide.slug });
+    }
+  }
+  return products;
+}
+
+/** Get featured products based on tags like Editor Pick, Best Overall, etc. */
+export function getFeaturedProducts(count: number = 8): (AffiliateProduct & { fromGuide: string; fromGuideSlug: string })[] {
+  const all = getAllProducts();
+  const priorityTags = ['Editor Pick', 'Best Overall', 'Best Value', 'Best Seller', 'Trend Pick', 'Must Have', '#1 Must Have', 'Top Pick'];
+  const featured = all.filter(p => p.tag && priorityTags.includes(p.tag));
+  const rest = all.filter(p => !p.tag || !priorityTags.includes(p.tag));
+  return [...featured, ...rest].slice(0, count);
+}
+
+/** Get products filtered by guide category */
+export function getProductsByCategory(category: string, count: number = 8): (AffiliateProduct & { fromGuide: string; fromGuideSlug: string })[] {
+  const seen = new Set<string>();
+  const products: (AffiliateProduct & { fromGuide: string; fromGuideSlug: string })[] = [];
+  const categoryGuides = category === 'all' ? guides : guides.filter(g => g.category === category);
+  for (const guide of categoryGuides) {
+    if (!guide.affiliateProducts) continue;
+    for (const p of guide.affiliateProducts) {
+      const key = `${p.name}|${p.brand}`;
+      if (seen.has(key)) continue;
+      seen.add(key);
+      products.push({ ...p, fromGuide: guide.title, fromGuideSlug: guide.slug });
+    }
+  }
+  return products.slice(0, count);
+}
+
+/** Category mapping for shop tabs */
+export const shopCategories = [
+  { slug: 'all', name: 'All' },
+  { slug: 'workwear', name: 'Workwear' },
+  { slug: 'casual', name: 'Casual' },
+  { slug: 'date-night', name: 'Date Night' },
+  { slug: 'seasonal', name: 'Seasonal' },
+  { slug: 'budget', name: 'Budget Finds' },
+];
