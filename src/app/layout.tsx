@@ -13,6 +13,7 @@ export const metadata: Metadata = {
   },
   other: {
     'p:domain_verify': 'c4d58b4c8b49f1f1f37420d23dc4b510',
+    'google-adsense-account': 'ca-pub-8049649445649586',
   },
   openGraph: {
     type: 'website', locale: 'en_US', url: 'https://stylemedaily.com', siteName: 'StyleMeDaily',
