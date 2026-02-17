@@ -6,6 +6,17 @@ import NewsletterCTA from '@/components/NewsletterCTA';
 export default function HomePage() {
   const featured = guides.slice(0, 6);
 
+  const pinterestPins = [
+    { title: 'Capsule Wardrobe Guide 2026', image: 'https://images.unsplash.com/photo-1487222477894-8943e31ef7b2?w=400&h=600&fit=crop', url: '/guides/capsule-wardrobe-working-women-2026', color: 'from-purple-500 to-violet-500' },
+    { title: 'Casual Outfits That Look Expensive', image: 'https://images.unsplash.com/photo-1485968579580-b6d095142e6e?w=400&h=600&fit=crop', url: '/guides/casual-outfits-look-expensive', color: 'from-pink-400 to-rose-400' },
+    { title: 'First Date Outfits', image: 'https://images.unsplash.com/photo-1492707892479-7bc8d5a4ee93?w=400&h=600&fit=crop', url: '/guides/first-date-outfits-every-vibe', color: 'from-red-400 to-pink-500' },
+    { title: 'Best Jeans 2026', image: 'https://images.unsplash.com/photo-1541099649105-f69ad21f3246?w=400&h=600&fit=crop', url: '/guides/best-jeans-every-body-type', color: 'from-blue-500 to-indigo-500' },
+    { title: 'Spring Fashion Trends', image: 'https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=400&h=600&fit=crop', url: '/guides/spring-fashion-trends-2026', color: 'from-orange-400 to-yellow-400' },
+    { title: 'Work Outfits 2026', image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&h=600&fit=crop', url: '/guides/work-outfits-that-mean-business', color: 'from-gray-700 to-gray-900' },
+    { title: 'Must-Have Spring Items', image: 'https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=400&h=600&fit=crop', url: '/guides/spring-2026-must-have-items', color: 'from-red-500 to-orange-500' },
+    { title: 'Best White Sneakers', image: 'https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?w=400&h=600&fit=crop', url: '/guides/best-white-sneakers-women-2026', color: 'from-gray-400 to-gray-500' },
+  ];
+
   return (
     <div>
       {/* Hero */}
@@ -62,6 +73,44 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Pinterest Gallery */}
+      <section className="mb-16">
+        <div className="flex items-center justify-between mb-6">
+          <div>
+            <h2 className="section-title flex items-center gap-2">
+              <span className="text-[#E60023]">📌</span> Trending on Pinterest
+            </h2>
+            <p className="text-sm text-gray-400 mt-1">Our most pinned style guides — follow us for daily outfit inspo</p>
+          </div>
+          <a href="https://www.pinterest.com/yss007895/" target="_blank" rel="noopener noreferrer"
+            className="text-sm text-[#E60023] hover:text-red-700 font-medium">
+            Follow →
+          </a>
+        </div>
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3">
+          {pinterestPins.map((pin, i) => (
+            <Link key={i} href={pin.url} className="group relative rounded-xl overflow-hidden aspect-[2/3] block">
+              <img
+                src={pin.image}
+                alt={pin.title}
+                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
+              <div className="absolute bottom-0 left-0 right-0 p-4">
+                <div className="font-display font-bold text-white text-sm leading-tight drop-shadow-lg">
+                  {pin.title}
+                </div>
+                <div className="flex items-center gap-1.5 mt-2">
+                  <span className="text-[10px] text-white/80 bg-white/20 backdrop-blur-sm px-2 py-0.5 rounded-full">
+                    📌 Save to Pinterest
+                  </span>
+                </div>
+              </div>
+            </Link>
+          ))}
+        </div>
+      </section>
+
       {/* Categories */}
       <section className="mb-16">
         <h2 className="section-title mb-6">Style by Occasion</h2>
@@ -98,9 +147,9 @@ export default function HomePage() {
           <div className="text-5xl">📌</div>
           <div className="flex-1 text-center sm:text-left">
             <h3 className="font-display font-bold text-gray-900 mb-1">Follow us on Pinterest</h3>
-            <p className="text-sm text-gray-500">Daily outfit inspiration, mood boards, and shoppable pins. 50K+ followers.</p>
+            <p className="text-sm text-gray-500">Daily outfit inspiration, mood boards, and shoppable pins.</p>
           </div>
-          <a href="https://pinterest.com/stylemedaily" target="_blank" rel="noopener noreferrer"
+          <a href="https://www.pinterest.com/yss007895/" target="_blank" rel="noopener noreferrer"
             className="bg-[#E60023] text-white px-6 py-2.5 rounded-xl font-semibold text-sm hover:bg-[#cc001f] transition-colors whitespace-nowrap">
             Follow on Pinterest
           </a>
