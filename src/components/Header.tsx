@@ -34,6 +34,7 @@ export default function Header() {
               <Link
                 key={l.href}
                 href={l.href}
+                aria-current={isActive(l.href) ? 'page' : undefined}
                 className={`px-3.5 py-2 text-sm font-medium rounded-lg transition-all ${
                   isActive(l.href)
                     ? 'text-gray-900 bg-gray-50'
@@ -69,6 +70,7 @@ export default function Header() {
                 key={l.href}
                 href={l.href}
                 onClick={() => setOpen(false)}
+                aria-current={isActive(l.href) ? 'page' : undefined}
                 className={`block px-4 py-3 text-sm rounded-lg ${
                   isActive(l.href)
                     ? 'text-gray-900 bg-gray-50 font-medium'

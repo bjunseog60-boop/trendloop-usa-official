@@ -59,8 +59,12 @@ export const guides: StyleGuide[] = [
     date: '2026-02-19',
     tag: 'gorpcore-style-guide',
     emoji: '🥾',
-    image: 'https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=600&h=400&fit=crop',
-    affiliateProducts: [],
+    image: 'https://images.unsplash.com/photo-1551698618-1dfe5d97d256?w=600&h=400&fit=crop',
+    affiliateProducts: [
+      { name: 'Waterproof Hiking Boots', brand: 'Amazon', price: '$58', url: 'https://amzn.to/4rVjOFg', tag: 'Editor Pick', image: 'https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=200&h=200&fit=crop' },
+      { name: 'Fleece Half-Zip Pullover', brand: 'Amazon', price: '$35', url: 'https://amzn.to/3ZCaw4S', image: 'https://images.unsplash.com/photo-1556821840-3a63f95609a7?w=200&h=200&fit=crop' },
+      { name: 'Cargo Jogger Pants', brand: 'Amazon', price: '$32', url: 'https://amzn.to/3Mro3JB', image: 'https://images.unsplash.com/photo-1594938298603-c8148c4dae35?w=200&h=200&fit=crop' },
+    ],
   },
 
   {
@@ -72,8 +76,12 @@ export const guides: StyleGuide[] = [
     date: '2026-02-19',
     tag: 'cottagecore',
     emoji: '🌸',
-    image: 'https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=600&h=400&fit=crop',
-    affiliateProducts: [],
+    image: 'https://images.unsplash.com/photo-1490750967868-88aa4f44baee?w=600&h=400&fit=crop',
+    affiliateProducts: [
+      { name: 'Floral Midi Wrap Dress', brand: 'Amazon', price: '$38', url: 'https://amzn.to/3OhrhzW', tag: 'Best Seller', image: 'https://images.unsplash.com/photo-1572804013309-59a88b7e92f1?w=200&h=200&fit=crop' },
+      { name: 'Straw Sun Hat', brand: 'Amazon', price: '$18', url: 'https://amzn.to/40drBCf', image: 'https://images.unsplash.com/photo-1521369909029-2afed882baee?w=200&h=200&fit=crop' },
+      { name: 'Puff Sleeve Linen Blouse', brand: 'Amazon', price: '$26', url: 'https://amzn.to/3ZCaw4S', image: 'https://images.unsplash.com/photo-1564257631407-4deb1f99d992?w=200&h=200&fit=crop' },
+    ],
   },
 
   {
@@ -85,8 +93,12 @@ export const guides: StyleGuide[] = [
     date: '2026-02-19',
     tag: 'Hot',
     emoji: '✨',
-    image: 'https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=600&h=400&fit=crop',
-    affiliateProducts: [],
+    image: 'https://images.unsplash.com/photo-1581044777550-4cfa60707998?w=600&h=400&fit=crop',
+    affiliateProducts: [
+      { name: 'Gold Hoop Earrings Set', brand: 'Amazon', price: '$15', url: 'https://amzn.to/4rVjOFg', tag: 'Trending', image: 'https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?w=200&h=200&fit=crop' },
+      { name: 'Slicked-Back Headband Set', brand: 'Amazon', price: '$12', url: 'https://amzn.to/3Mro3JB', image: 'https://images.unsplash.com/photo-1596944924616-7b38e7cfac36?w=200&h=200&fit=crop' },
+      { name: 'Fitted Ribbed Tank Top 3-Pack', brand: 'Amazon', price: '$24', url: 'https://amzn.to/3OhrhzW', image: 'https://images.unsplash.com/photo-1564257631407-4deb1f99d992?w=200&h=200&fit=crop' },
+    ],
   },
 
   {
@@ -98,12 +110,16 @@ export const guides: StyleGuide[] = [
     date: '2026-02-19',
     tag: 'Hot',
     emoji: '🩰',
-    image: 'https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=600&h=400&fit=crop',
-    affiliateProducts: [],
+    image: 'https://images.unsplash.com/photo-1518834107812-67b0b7c58434?w=600&h=400&fit=crop',
+    affiliateProducts: [
+      { name: 'Wrap Ballet Flats', brand: 'Amazon', price: '$32', url: 'https://amzn.to/3ZCaw4S', tag: 'Editor Pick', image: 'https://images.unsplash.com/photo-1543163521-1bf539c55dd2?w=200&h=200&fit=crop' },
+      { name: 'Mesh Overlay Midi Skirt', brand: 'Amazon', price: '$28', url: 'https://amzn.to/40drBCf', image: 'https://images.unsplash.com/photo-1583496661160-fb5886a0aaaa?w=200&h=200&fit=crop' },
+      { name: 'Cropped Wrap Cardigan', brand: 'Amazon', price: '$26', url: 'https://amzn.to/4kNVNxy', image: 'https://images.unsplash.com/photo-1576566588028-4147f3842f27?w=200&h=200&fit=crop' },
+    ],
   },
 
   {
-    slug: 'gorpcore-for-women-3-styling-tips--outfit-ideas-that-own-tiktok',
+    slug: 'gorpcore-for-women-3-styling-tips-outfit-ideas-that-own-tiktok',
     title: 'Gorpcore for Women: 3 Styling Tips & Outfit Ideas That Own TikTok',
     category: 'casual',
     description: 'Master gorpcore outfit ideas with our style guide. Layer pieces, mix earth tones & elevate with gold accessories.',
@@ -111,8 +127,12 @@ export const guides: StyleGuide[] = [
     date: '2026-02-19',
     tag: 'Hot',
     emoji: '🎒',
-    image: 'https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=600&h=400&fit=crop',
-    affiliateProducts: [],
+    image: 'https://images.unsplash.com/photo-1501555088652-021d21a95476?w=600&h=400&fit=crop',
+    affiliateProducts: [
+      { name: 'Puffer Vest', brand: 'Amazon', price: '$42', url: 'https://amzn.to/4rVjOFg', tag: 'Trending', image: 'https://images.unsplash.com/photo-1591047139829-d91aecb6caea?w=200&h=200&fit=crop' },
+      { name: 'Trail Running Sneakers', brand: 'Amazon', price: '$55', url: 'https://amzn.to/3Mro3JB', image: 'https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=200&h=200&fit=crop' },
+      { name: 'Nylon Belt Bag', brand: 'Amazon', price: '$19', url: 'https://amzn.to/3OhrhzW', image: 'https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=200&h=200&fit=crop' },
+    ],
   },
 
   {
@@ -124,8 +144,12 @@ export const guides: StyleGuide[] = [
     date: '2026-02-19',
     tag: 'Hot',
     emoji: '🎩',
-    image: 'https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=600&h=400&fit=crop',
-    affiliateProducts: [],
+    image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&h=400&fit=crop',
+    affiliateProducts: [
+      { name: 'Oversized Knit Cardigan', brand: 'Amazon', price: '$38', url: 'https://amzn.to/3ZCaw4S', tag: 'Editor Pick', image: 'https://images.unsplash.com/photo-1576566588028-4147f3842f27?w=200&h=200&fit=crop' },
+      { name: 'Corduroy Wide-Leg Trousers', brand: 'Amazon', price: '$34', url: 'https://amzn.to/40drBCf', image: 'https://images.unsplash.com/photo-1594938298603-c8148c4dae35?w=200&h=200&fit=crop' },
+      { name: 'Argyle Sweater Vest', brand: 'Amazon', price: '$25', url: 'https://amzn.to/4kNVNxy', image: 'https://images.unsplash.com/photo-1556821840-3a63f95609a7?w=200&h=200&fit=crop' },
+    ],
   },
 
   {
@@ -137,12 +161,16 @@ export const guides: StyleGuide[] = [
     date: '2026-02-19',
     tag: 'Hot',
     emoji: '👓',
-    image: 'https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=600&h=400&fit=crop',
-    affiliateProducts: [],
+    image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=600&h=400&fit=crop',
+    affiliateProducts: [
+      { name: 'Fitted Pencil Skirt', brand: 'Amazon', price: '$28', url: 'https://amzn.to/3OhrhzW', tag: 'Best Seller', image: 'https://images.unsplash.com/photo-1583496661160-fb5886a0aaaa?w=200&h=200&fit=crop' },
+      { name: 'Sheer Button-Down Blouse', brand: 'Amazon', price: '$24', url: 'https://amzn.to/3ZCaw4S', image: 'https://images.unsplash.com/photo-1564257631407-4deb1f99d992?w=200&h=200&fit=crop' },
+      { name: 'Pointed-Toe Kitten Heels', brand: 'Amazon', price: '$42', url: 'https://amzn.to/4rVjOFg', image: 'https://images.unsplash.com/photo-1543163521-1bf539c55dd2?w=200&h=200&fit=crop' },
+    ],
   },
 
   {
-    slug: 'indie-sleaze-is-back--heres-how-to-nail-it-in-2025',
+    slug: 'indie-sleaze-is-back-heres-how-to-nail-it-in-2025',
     title: 'Indie Sleaze Is Back — Here\'s How to Nail It in 2025',
     category: 'casual',
     description: 'A complete guide to the indie sleaze revival trend — key pieces, 3 outfit formulas, and styling tips for nailing the chaotic, effortless cool-girl aesthetic in 2025.',
@@ -150,8 +178,12 @@ export const guides: StyleGuide[] = [
     date: '2026-02-19',
     tag: 'Hot',
     emoji: '🖤',
-    image: 'https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=600&h=400&fit=crop',
-    affiliateProducts: [],
+    image: 'https://images.unsplash.com/photo-1509631179647-0177331693ae?w=600&h=400&fit=crop',
+    affiliateProducts: [
+      { name: 'Distressed Band Tee', brand: 'Amazon', price: '$22', url: 'https://amzn.to/3Mro3JB', tag: 'Trending', image: 'https://images.unsplash.com/photo-1556821840-3a63f95609a7?w=200&h=200&fit=crop' },
+      { name: 'Faux Leather Mini Skirt', brand: 'Amazon', price: '$26', url: 'https://amzn.to/40drBCf', image: 'https://images.unsplash.com/photo-1583496661160-fb5886a0aaaa?w=200&h=200&fit=crop' },
+      { name: 'Chunky Platform Boots', brand: 'Amazon', price: '$52', url: 'https://amzn.to/4kNVNxy', image: 'https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=200&h=200&fit=crop' },
+    ],
   },
 
   {
@@ -163,8 +195,12 @@ export const guides: StyleGuide[] = [
     date: '2026-02-19',
     tag: 'Hot',
     emoji: '🎀',
-    image: 'https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=600&h=400&fit=crop',
-    affiliateProducts: [],
+    image: 'https://images.unsplash.com/photo-1526510747491-b4c370ae3154?w=600&h=400&fit=crop',
+    affiliateProducts: [
+      { name: 'Pastel Cardigan with Pearl Buttons', brand: 'Amazon', price: '$30', url: 'https://amzn.to/3ZCaw4S', tag: 'Editor Pick', image: 'https://images.unsplash.com/photo-1576566588028-4147f3842f27?w=200&h=200&fit=crop' },
+      { name: 'Pleated Tennis Skirt', brand: 'Amazon', price: '$22', url: 'https://amzn.to/3OhrhzW', image: 'https://images.unsplash.com/photo-1583496661160-fb5886a0aaaa?w=200&h=200&fit=crop' },
+      { name: 'Cloud Slides Pastel Pink', brand: 'Amazon', price: '$18', url: 'https://amzn.to/4rVjOFg', image: 'https://images.unsplash.com/photo-1543163521-1bf539c55dd2?w=200&h=200&fit=crop' },
+    ],
   },
 
   {
@@ -176,8 +212,12 @@ export const guides: StyleGuide[] = [
     date: '2026-02-19',
     tag: 'Hot',
     emoji: '🧥',
-    image: 'https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=600&h=400&fit=crop',
-    affiliateProducts: [],
+    image: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=600&h=400&fit=crop',
+    affiliateProducts: [
+      { name: 'Faux Fur Coat', brand: 'Amazon', price: '$65', url: 'https://amzn.to/4kNVNxy', tag: 'Editor Pick', image: 'https://images.unsplash.com/photo-1591047139829-d91aecb6caea?w=200&h=200&fit=crop' },
+      { name: 'Chunky Gold Chain Necklace', brand: 'Amazon', price: '$18', url: 'https://amzn.to/3Mro3JB', image: 'https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?w=200&h=200&fit=crop' },
+      { name: 'Leopard Print Scarf', brand: 'Amazon', price: '$16', url: 'https://amzn.to/40drBCf', image: 'https://images.unsplash.com/photo-1596944924616-7b38e7cfac36?w=200&h=200&fit=crop' },
+    ],
   },
 
   {
@@ -189,35 +229,14 @@ export const guides: StyleGuide[] = [
     date: '2026-02-19',
     tag: 'Hot',
     emoji: '🌹',
-    image: 'https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=600&h=400&fit=crop',
-    affiliateProducts: [],
+    image: 'https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=600&h=400&fit=crop',
+    affiliateProducts: [
+      { name: 'Vintage Patchwork Jacket', brand: 'Amazon', price: '$48', url: 'https://amzn.to/3ZCaw4S', tag: 'Trending', image: 'https://images.unsplash.com/photo-1591047139829-d91aecb6caea?w=200&h=200&fit=crop' },
+      { name: 'Printed Maxi Skirt', brand: 'Amazon', price: '$34', url: 'https://amzn.to/3OhrhzW', image: 'https://images.unsplash.com/photo-1572804013309-59a88b7e92f1?w=200&h=200&fit=crop' },
+      { name: 'Chunky Statement Rings Set', brand: 'Amazon', price: '$15', url: 'https://amzn.to/4rVjOFg', image: 'https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?w=200&h=200&fit=crop' },
+    ],
   },
 
-  {
-    slug: 'maximalist-vintage-revival-the-bold-trend-taking-over-2025',
-    title: 'Maximalist Vintage Revival: The Bold Trend Taking Over 2025',
-    category: 'casual',
-    description: 'A trend breakdown of the maximalist vintage revival aesthetic — bold prints, rich textures, chunky gold jewelry, and eclectic layering tips for Gen Z and Millennial women.',
-    readTime: '10 min',
-    date: '2026-02-19',
-    tag: 'Hot',
-    emoji: '✨',
-    image: 'https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=600&h=400&fit=crop',
-    affiliateProducts: [],
-  },
-
-  {
-    slug: 'maximalist-vintage-revival-the-bold-trend-that-proves-more-is-more',
-    title: 'Maximalist Vintage Revival: The Bold Trend That Proves More Is More',
-    category: 'seasonal',
-    description: 'A trend breakdown of maximalist vintage revival styling — bold prints, velvet textures, layered jewelry, and retro pieces for every occasion.',
-    readTime: '10 min',
-    date: '2026-02-19',
-    tag: 'Hot',
-    emoji: '👑',
-    image: 'https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=600&h=400&fit=crop',
-    affiliateProducts: [],
-  },
 
   {
     slug: 'capsule-wardrobe-working-women-2026',

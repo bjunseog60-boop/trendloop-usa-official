@@ -7,6 +7,7 @@ export default function NewsletterCTA() {
       </p>
       <iframe
         src="https://yss007895.substack.com/embed"
+        title="Newsletter signup form"
         width="100%"
         height="130"
         style={{ border: '1px solid #EEE', background: 'white', borderRadius: '12px', maxWidth: '480px', display: 'block', margin: '0 auto' }}
