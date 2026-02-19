@@ -33,6 +33,32 @@ export const categories = [
 
 export const guides: StyleGuide[] = [
   {
+    slug: 'maximalist-vintage-revival-the-bold-trend-taking-over-2025',
+    title: 'Maximalist Vintage Revival: The Bold Trend Taking Over 2025',
+    category: 'casual',
+    description: 'A trend breakdown of the maximalist vintage revival aesthetic — bold prints, rich textures, chunky gold jewelry, and eclectic layering tips for Gen Z and Millennial women.',
+    readTime: '10 min',
+    date: '2026-02-19',
+    tag: 'Hot',
+    emoji: '✨',
+    image: 'https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=600&h=400&fit=crop',
+    affiliateProducts: [],
+  },
+
+  {
+    slug: 'maximalist-vintage-revival-the-bold-trend-that-proves-more-is-more',
+    title: 'Maximalist Vintage Revival: The Bold Trend That Proves More Is More',
+    category: 'seasonal',
+    description: 'A trend breakdown of maximalist vintage revival styling — bold prints, velvet textures, layered jewelry, and retro pieces for every occasion.',
+    readTime: '10 min',
+    date: '2026-02-19',
+    tag: 'Hot',
+    emoji: '👑',
+    image: 'https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=600&h=400&fit=crop',
+    affiliateProducts: [],
+  },
+
+  {
     slug: 'capsule-wardrobe-working-women-2026',
     title: 'The Ultimate Capsule Wardrobe Guide for Working Women 2026',
     category: 'workwear',
