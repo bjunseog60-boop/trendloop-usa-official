@@ -1026,7 +1026,7 @@ export function getAllProducts(): (AffiliateProduct & { fromGuide: string; fromG
       seen.add(key);
       products.push({ ...p, fromGuide: guide.title, fromGuideSlug: guide.slug });
     }
-  }h
+  }
   return products;
 }
 
