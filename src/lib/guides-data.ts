@@ -17,14 +17,14 @@ export interface AffiliateProduct {
   price: string;
   url: string;
   tag?: string;
-  image?: string;
+  image?: string;h
 }
 
 export const categories = [
   { slug: 'all', name: 'All Styles', icon: '✨' },
   { slug: 'workwear', name: 'Workwear', icon: '👔' },
   { slug: 'casual', name: 'Casual Chic', icon: '👗' },
-  { slug: 'date-night', name: 'Date Night', icon: '💃' },
+  { slug: 'date-night', name: 'Date Night', icon: '💃' },h
   { slug: 'seasonal', name: 'Seasonal', icon: '🌸' },
   { slug: 'body-type', name: 'Body Types', icon: '💖' },
   { slug: 'budget', name: 'On a Budget', icon: '💰' },
@@ -60,9 +60,9 @@ export const guides: StyleGuide[] = [
 
   {
     slug: 'clean-girl-aesthetic-2026-the-effortless-style-guide-everyones-obsessing-over',
-    title: 'Clean Girl Aesthetic 2026: The Effortless Style Guide Everyone's Obsessing Over',
+    title: 'Clean Girl Aesthetic 2026: The Effortless Style Guide Everyone\'s Obsessing Over',
     category: 'casual',
-    description: 'Master the viral clean girl aesthetic 2026 with effortless outfit ideas and styling tips straight from TikTok's hottest trend.',
+    description: 'Master the viral clean girl aesthetic 2026 with effortless outfit ideas and styling tips straight from TikTok\'s hottest trend.',
     readTime: '10 min',
     date: '2026-02-19',
     tag: 'Hot',
@@ -125,7 +125,7 @@ export const guides: StyleGuide[] = [
 
   {
     slug: 'indie-sleaze-is-back--heres-how-to-nail-it-in-2025',
-    title: 'Indie Sleaze Is Back — Here's How to Nail It in 2025',
+    title: 'Indie Sleaze Is Back — Here\'s How to Nail It in 2025',
     category: 'casual',
     description: 'A complete guide to the indie sleaze revival trend — key pieces, 3 outfit formulas, and styling tips for nailing the chaotic, effortless cool-girl aesthetic in 2025.',
     readTime: '10 min',
@@ -1026,7 +1026,7 @@ export function getAllProducts(): (AffiliateProduct & { fromGuide: string; fromG
       seen.add(key);
       products.push({ ...p, fromGuide: guide.title, fromGuideSlug: guide.slug });
     }
-  }
+  }h
   return products;
 }
 
