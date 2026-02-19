@@ -33,6 +33,19 @@ export const categories = [
 
 export const guides: StyleGuide[] = [
   {
+    slug: 'gorpcore-for-women-3-styling-tips--outfit-ideas-that-own-tiktok',
+    title: 'Gorpcore for Women: 3 Styling Tips & Outfit Ideas That Own TikTok',
+    category: 'casual',
+    description: 'Master gorpcore outfit ideas with our style guide. Layer pieces, mix earth tones & elevate with gold accessories.',
+    readTime: '10 min',
+    date: '2026-02-19',
+    tag: 'Hot',
+    emoji: '🎒',
+    image: 'https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=600&h=400&fit=crop',
+    affiliateProducts: [],
+  },
+
+  {
     slug: 'eclectic-grandpa-style-the-ultimate-gen-z-trend-guide',
     title: 'Eclectic Grandpa Style: The Ultimate Gen Z Trend Guide',
     category: 'casual',
