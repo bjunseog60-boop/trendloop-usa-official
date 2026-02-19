@@ -20,7 +20,7 @@ jobs:
           node-version: '18'
 
       - name: Install dependencies
-        run: npm install googleapis
+        run: npm install googleapis --legacy-peer-deps
 
       - name: Find new posts
         id: find-posts
