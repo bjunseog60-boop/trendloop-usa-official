@@ -33,6 +33,19 @@ export const categories = [
 
 export const guides: StyleGuide[] = [
   {
+    slug: 'clean-girl-aesthetic-2026-the-effortless-style-guide-everyones-obsessing-over',
+    title: 'Clean Girl Aesthetic 2026: The Effortless Style Guide Everyone's Obsessing Over',
+    category: 'casual',
+    description: 'Master the viral clean girl aesthetic 2026 with effortless outfit ideas and styling tips straight from TikTok's hottest trend.',
+    readTime: '10 min',
+    date: '2026-02-19',
+    tag: 'Hot',
+    emoji: '✨',
+    image: 'https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=600&h=400&fit=crop',
+    affiliateProducts: [],
+  },
+
+  {
     slug: 'balletcore-essentials-how-to-master-this-viral-trend',
     title: 'Balletcore Essentials: How to Master This Viral Trend',
     category: 'casual',
