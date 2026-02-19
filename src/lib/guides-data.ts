@@ -33,6 +33,19 @@ export const categories = [
 
 export const guides: StyleGuide[] = [
   {
+    slug: 'mob-wife-aesthetic-the-bold-luxe-trend-taking-over-2024',
+    title: 'Mob Wife Aesthetic: The Bold, Luxe Trend Taking Over 2024',
+    category: 'seasonal',
+    description: 'Complete guide to the mob wife aesthetic — the bold, luxe 2024 trend featuring faux fur, gold jewelry, leopard print, and unapologetic glamour.',
+    readTime: '10 min',
+    date: '2026-02-19',
+    tag: 'Hot',
+    emoji: '🧥',
+    image: 'https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=600&h=400&fit=crop',
+    affiliateProducts: [],
+  },
+
+  {
     slug: 'maximalist-vintage-revival-how-to-master-the-moreismore-trend',
     title: 'Maximalist Vintage Revival: How to Master the More-Is-More Trend',
     category: 'casual',
