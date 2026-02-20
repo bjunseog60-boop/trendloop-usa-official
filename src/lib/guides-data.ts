@@ -33,10 +33,29 @@ export const categories = [
 
 export const guides: StyleGuide[] = [
   {
+    slug: 'spring-2026-luxury-fashion-trends-quiet-power-dressing',
+    title: 'Spring 2026: The New Sartorial Narrative of Discerning Luxury',
+    category: 'seasonal',
+    description: 'Unveiling Spring 2026 luxury fashion trends. Explore quiet luxury spring, architectural silhouettes, and the elevated spring wardrobe by StyleMeDaily.',
+    readTime: '14 min',
+    date: '2026-02-20',
+    tag: 'Pillar Guide',
+    emoji: '✨',
+    image: '/images/guides/spring-2026-luxury-fashion-trends-quiet-power-dressing-1.jpg',
+    affiliateProducts: [
+      { name: 'Linen-blend structured blazer', brand: 'Amazon', price: '$--', url: 'https://www.amazon.com/s?k=Linen-blend+structured+blazer&tag=styleme-20', tag: 'Editor Pick' },
+      { name: 'Silk midi skirt in butter yellow', brand: 'Amazon', price: '$--', url: 'https://www.amazon.com/s?k=Silk+midi+skirt+in+butter+yellow&tag=styleme-20' },
+      { name: 'Leather minimal sandals', brand: 'Amazon', price: '$--', url: 'https://www.amazon.com/s?k=Leather+minimal+sandals&tag=styleme-20' },
+      { name: 'Cashmere knit polo', brand: 'Amazon', price: '$--', url: 'https://www.amazon.com/s?k=Cashmere+knit+polo&tag=styleme-20' },
+      { name: 'Wide-leg tailored trousers', brand: 'Amazon', price: '$--', url: 'https://www.amazon.com/s?k=Wide-leg+tailored+trousers&tag=styleme-20' },
+    ],
+  },
+
+  {
     slug: 'coastal-grandmother-style-guide-how-to-wear-the-tiktok-trend-that-lives-in-my-head-rentfree',
     title: 'Coastal Grandmother Style Guide: How to Wear the TikTok Trend That Lives in My Head Rent-Free',
     category: 'Style Guide',
-    description: 'Your ultimate coastal grandmother style guide with outfit ideas, styling tips, and shop-the-look essentials. Learn how to wear TikTok's chicest trend like a pro.',
+    description: 'Your ultimate coastal grandmother style guide with outfit ideas, styling tips, and shop-the-look essentials. Learn how to wear TikTok\u0027s chicest trend like a pro.',
     readTime: '10 min',
     date: '2026-02-20',
     tag: 'coastal grandmother style',
