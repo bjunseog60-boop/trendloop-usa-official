@@ -33,6 +33,19 @@ export const categories = [
 
 export const guides: StyleGuide[] = [
   {
+    slug: 'clean-girl-aesthetic-2026-the-effortless-style-guide-you-need-rn',
+    title: 'Clean Girl Aesthetic 2026: The Effortless Style Guide You Need RN',
+    category: 'Fashion & Style',
+    description: 'Your ultimate style guide to the clean girl aesthetic 2026. Get outfit ideas, styling tips, and shop affordable essentials to nail the viral TikTok trend.',
+    readTime: '10 min',
+    date: '2026-02-20',
+    tag: 'clean girl aesthetic 2026',
+    emoji: '🤍',
+    image: 'https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=600&h=400&fit=crop',
+    affiliateProducts: [],
+  },
+
+  {
     slug: 'office-siren-fashion-your-ultimate-style-guide-to-the-hottest-tiktok-trend',
     title: 'Office Siren Fashion: Your Ultimate Style Guide to the Hottest TikTok Trend',
     category: 'Fashion & Style',
