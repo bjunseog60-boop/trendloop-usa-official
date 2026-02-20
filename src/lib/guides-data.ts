@@ -46,8 +46,8 @@ export const guides: StyleGuide[] = [
   },
 
   {
-    slug: 'the-soft-girl-aesthetic-is-taking-over--heres-how-to-wear-it',
-    title: 'The Soft Girl Aesthetic Is Taking Over — Here's How to Wear It',
+    slug: 'the-soft-girl-aesthetic-is-taking-over-heres-how-to-wear-it',
+    title: 'The Soft Girl Aesthetic Is Taking Over - Here\'s How to Wear It',
     category: 'Style Guide',
     description: 'Your ultimate style guide to the soft girl aesthetic trend taking over TikTok and Instagram. Get outfit ideas, styling tips, and shop the essential pastel pieces to nail the look.',
     readTime: '10 min',
@@ -72,7 +72,7 @@ export const guides: StyleGuide[] = [
   },
 
   {
-    slug: 'cottagecore-spring-outfits-that-are-taking-over-your-fyp--a-style-guide',
+    slug: 'cottagecore-spring-outfits-that-are-taking-over-your-fyp-a-style-guide',
     title: 'Cottagecore Spring Outfits That Are Taking Over Your FYP — A Style Guide',
     category: 'Fashion & Style',
     description: 'Your ultimate style guide to cottagecore spring outfits trending on TikTok and Instagram. Get outfit ideas, styling tips, and shop the essentials for the pastoral aesthetic.',
