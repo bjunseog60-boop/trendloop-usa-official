@@ -33,6 +33,19 @@ export const categories = [
 
 export const guides: StyleGuide[] = [
   {
+    slug: 'the-soft-girl-aesthetic-is-taking-over--heres-how-to-wear-it',
+    title: 'The Soft Girl Aesthetic Is Taking Over — Here's How to Wear It',
+    category: 'Style Guide',
+    description: 'Your ultimate style guide to the soft girl aesthetic trend taking over TikTok and Instagram. Get outfit ideas, styling tips, and shop the essential pastel pieces to nail the look.',
+    readTime: '10 min',
+    date: '2026-02-20',
+    tag: 'soft girl aesthetic',
+    emoji: '🌸',
+    image: 'https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=600&h=400&fit=crop',
+    affiliateProducts: [],
+  },
+
+  {
     slug: 'mob-wife-aesthetic-your-complete-style-guide-to-the-most-unhinged-trend-of-the-year',
     title: 'Mob Wife Aesthetic: Your Complete Style Guide to the Most Unhinged Trend of the Year',
     category: 'Fashion & Style Trends',
