@@ -33,6 +33,19 @@ export const categories = [
 
 export const guides: StyleGuide[] = [
   {
+    slug: 'office-siren-fashion-your-ultimate-style-guide-to-the-hottest-tiktok-trend',
+    title: 'Office Siren Fashion: Your Ultimate Style Guide to the Hottest TikTok Trend',
+    category: 'Fashion & Style',
+    description: 'Master the office siren fashion trend with this style guide. Get outfit ideas, styling tips, and shop the essentials to nail the corporate femme fatale aesthetic trending on TikTok and Instagram.',
+    readTime: '10 min',
+    date: '2026-02-20',
+    tag: 'office siren fashion, style guide, outfit ideas, how to wear, workwear aesthetic, TikTok fashion trends, corporate fashion',
+    emoji: '🖤',
+    image: 'https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=600&h=400&fit=crop',
+    affiliateProducts: [],
+  },
+
+  {
     slug: 'the-soft-girl-aesthetic-is-taking-over--heres-how-to-wear-it',
     title: 'The Soft Girl Aesthetic Is Taking Over — Here's How to Wear It',
     category: 'Style Guide',
