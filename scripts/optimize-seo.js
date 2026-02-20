@@ -19,7 +19,7 @@ async function main() {
     });
 
     const searchconsole = google.searchconsole({ version: 'v1', auth });
-    const siteUrl = 'https://yss007895-code.github.io/stylemedaily-web/';
+    const siteUrl = 'https://trendloopusa.net/';
 
     // 최근 28일 데이터
     const endDate = new Date().toISOString().split('T')[0];

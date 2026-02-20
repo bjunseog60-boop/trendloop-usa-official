@@ -16,7 +16,7 @@ const { execSync } = require('child_process');
 const fs = require('fs');
 const https = require('https');
 
-const SITE_URL = 'https://yss007895-code.github.io/stylemedaily-web';
+const SITE_URL = 'https://trendloopusa.net';
 const isFullAuto = process.argv.includes('--full');
 
 // 패션 트렌드 키워드 (폴백용)

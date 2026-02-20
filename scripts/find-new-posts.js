@@ -13,7 +13,7 @@ for (const file of files) {
   const slugMatches = content.match(/slug:\s*['"]([^'"]+)['"]/g) || [];
   for (const match of slugMatches) {
     const slug = match.replace(/slug:\s*['"]/, '').replace(/['"]/, '');
-    newSlugs.push('https://yss007895-code.github.io/stylemedaily-web/blog/' + slug);
+    newSlugs.push('https://trendloopusa.net/blog/' + slug);
   }
 }
 
