@@ -33,6 +33,19 @@ export const categories = [
 
 export const guides: StyleGuide[] = [
   {
+    slug: 'mob-wife-aesthetic-your-complete-style-guide-to-the-most-unhinged-trend-of-the-year',
+    title: 'Mob Wife Aesthetic: Your Complete Style Guide to the Most Unhinged Trend of the Year',
+    category: 'Fashion & Style Trends',
+    description: 'Master the viral mob wife aesthetic with this complete style guide. Get outfit ideas, styling tips for fur coats and gold jewelry, plus shop the essentials to nail the TikTok trend.',
+    readTime: '10 min',
+    date: '2026-02-20',
+    tag: 'mob wife aesthetic',
+    emoji: '🖤',
+    image: 'https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=600&h=400&fit=crop',
+    affiliateProducts: [],
+  },
+
+  {
     slug: 'cottagecore-spring-outfits-that-are-taking-over-your-fyp--a-style-guide',
     title: 'Cottagecore Spring Outfits That Are Taking Over Your FYP — A Style Guide',
     category: 'Fashion & Style',
