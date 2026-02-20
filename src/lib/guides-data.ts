@@ -33,6 +33,19 @@ export const categories = [
 
 export const guides: StyleGuide[] = [
   {
+    slug: 'dark-academia-fashion-the-tiktok-aesthetic-that-lives-rentfree-in-our-heads',
+    title: 'Dark Academia Fashion: The TikTok Aesthetic That Lives Rent-Free in Our Heads',
+    category: 'Style Guide',
+    description: 'Your ultimate dark academia fashion style guide with outfit ideas, styling tips, and affordable essentials to shop. Learn how to wear the TikTok-viral aesthetic like a pro.',
+    readTime: '10 min',
+    date: '2026-02-21',
+    tag: 'dark academia fashion',
+    emoji: '📚',
+    image: 'https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=600&h=400&fit=crop',
+    affiliateProducts: [],
+  },
+
+  {
     slug: 'the-soft-girl-aesthetic-is-taking-over--heres-how-to-wear-it',
     title: 'The Soft Girl Aesthetic Is Taking Over — Here's How to Wear It',
     category: 'Style Guide',
