@@ -33,6 +33,25 @@ export const categories = [
 
 export const guides: StyleGuide[] = [
   {
+    slug: 'refined-90s-minimalism-understated-luxury-curated-essentials',
+    title: 'The Whisper of Luxury: Reclaiming Refined \'90s Minimalism for Today',
+    category: 'casual',
+    description: 'Explore the enduring allure of 90s minimalist fashion, a cultural shift towards understated refinement and elevated essentials in contemporary luxury.',
+    readTime: '12 min',
+    date: '2026-02-20',
+    tag: 'Editor Pick',
+    emoji: '🤍',
+    image: '/images/guides/refined-90s-minimalism-understated-luxury-curated-essentials.jpg',
+    affiliateProducts: [
+      { name: 'Slim-cut tailored trousers in wool crepe', brand: 'Amazon', price: '$--', url: 'https://www.amazon.com/s?k=Slim-cut+tailored+trousers+in+wool+crepe&tag=styleme-20', tag: 'Editor Pick' },
+      { name: 'Bias-cut silk slip dress', brand: 'Amazon', price: '$--', url: 'https://www.amazon.com/s?k=Bias-cut+silk+slip+dress&tag=styleme-20' },
+      { name: 'Oversized single-breasted blazer', brand: 'Amazon', price: '$--', url: 'https://www.amazon.com/s?k=Oversized+single-breasted+blazer&tag=styleme-20' },
+      { name: 'Cashmere crewneck sweater', brand: 'Amazon', price: '$--', url: 'https://www.amazon.com/s?k=Cashmere+crewneck+sweater&tag=styleme-20' },
+      { name: 'Elongated column skirt', brand: 'Amazon', price: '$--', url: 'https://www.amazon.com/s?k=Elongated+column+skirt&tag=styleme-20' },
+    ],
+  },
+
+  {
     slug: 'coquette-aesthetic-guide-feminine-style-2026',
     title: 'Coquette Aesthetic: The Ultimate Guide to Feminine Dressing in 2026',
     category: 'casual',
