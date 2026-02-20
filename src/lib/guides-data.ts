@@ -33,6 +33,19 @@ export const categories = [
 
 export const guides: StyleGuide[] = [
   {
+    slug: 'soft-girl-aesthetic-your-ultimate-style-guide--outfit-ideas-for-2025',
+    title: 'Soft Girl Aesthetic: Your Ultimate Style Guide & Outfit Ideas for 2025',
+    category: 'Fashion & Style',
+    description: 'Master the soft girl aesthetic with this 2025 style guide. Discover pastel outfit ideas, dainty accessory tips, and how to wear the viral TikTok trend effortlessly. Shop the essentials now!',
+    readTime: '10 min',
+    date: '2026-02-21',
+    tag: 'soft girl aesthetic, outfit ideas, style guide, how to wear, pastel outfits, TikTok fashion, 2025 trends, feminine style',
+    emoji: '🎀',
+    image: 'https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=600&h=400&fit=crop',
+    affiliateProducts: [],
+  },
+
+  {
     slug: 'dark-academia-fashion-the-tiktok-aesthetic-that-lives-rentfree-in-our-heads',
     title: 'Dark Academia Fashion: The TikTok Aesthetic That Lives Rent-Free in Our Heads',
     category: 'Style Guide',
