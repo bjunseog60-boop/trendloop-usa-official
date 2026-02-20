@@ -33,6 +33,19 @@ export const categories = [
 
 export const guides: StyleGuide[] = [
   {
+    slug: 'coquette-aesthetic-2026-the-ultimate-style-guide-for-your-itgirl-era',
+    title: 'Coquette Aesthetic 2026: The Ultimate Style Guide for Your It-Girl Era',
+    category: 'Fashion & Style Trends',
+    description: 'Your ultimate style guide to the coquette aesthetic 2026. Discover outfit ideas, how to wear bows and lace the modern way, and shop the essentials for this viral TikTok trend.',
+    readTime: '10 min',
+    date: '2026-02-21',
+    tag: 'coquette aesthetic 2026',
+    emoji: '🎀',
+    image: 'https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=600&h=400&fit=crop',
+    affiliateProducts: [],
+  },
+
+  {
     slug: 'clean-girl-aesthetic-2026-the-effortless-style-guide-you-need-rn',
     title: 'Clean Girl Aesthetic 2026: The Effortless Style Guide You Need RN',
     category: 'Fashion & Style',
