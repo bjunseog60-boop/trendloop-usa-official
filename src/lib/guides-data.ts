@@ -33,6 +33,19 @@ export const categories = [
 
 export const guides: StyleGuide[] = [
   {
+    slug: 'cottagecore-spring-outfits-that-are-taking-over-your-fyp--a-style-guide',
+    title: 'Cottagecore Spring Outfits That Are Taking Over Your FYP — A Style Guide',
+    category: 'Fashion & Style',
+    description: 'Your ultimate style guide to cottagecore spring outfits trending on TikTok and Instagram. Get outfit ideas, styling tips, and shop the essentials for the pastoral aesthetic.',
+    readTime: '10 min',
+    date: '2026-02-20',
+    tag: 'cottagecore spring outfits',
+    emoji: '🌿',
+    image: 'https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=600&h=400&fit=crop',
+    affiliateProducts: [],
+  },
+
+  {
     slug: 'spring-2026-luxury-fashion-trends-quiet-power-dressing',
     title: 'Spring 2026: The New Sartorial Narrative of Discerning Luxury',
     category: 'seasonal',
