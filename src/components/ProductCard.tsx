@@ -1,4 +1,4 @@
-import Image from 'next/image';
+import SafeImage from '@/components/SafeImage';
 import type { AffiliateProduct } from '@/lib/guides-data';
 
 interface ProductCardProps {
@@ -20,12 +20,13 @@ export default function ProductCard({ product, size = 'md', showFrom = false }: 
     >
       {p.image ? (
         <div className={`relative ${imageHeight} overflow-hidden bg-gray-50`}>
-          <Image
+          <SafeImage
             src={p.image}
             alt={p.name}
             fill
             sizes={size === 'lg' ? '(max-width: 640px) 50vw, 33vw' : '(max-width: 640px) 50vw, 25vw'}
             className="object-cover group-hover:scale-105 transition-transform duration-500"
+            category="fashion"
           />
           <div className="product-card-action absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 transition-opacity duration-300">
             <span className="text-white text-sm font-semibold px-4 py-2 bg-white/20 backdrop-blur-sm rounded-lg border border-white/30">
