@@ -131,7 +131,13 @@ def mark_topic_as_used(keyword):
         f.write(keyword + "\n")
 
 # Verified fallback images (all confirmed 200 OK)
-# FALLBACK_IMAGES removed - all images generated locally
+FALLBACK_IMAGES = [
+    "https://images.unsplash.com/photo-1483985988355-763728e1935b?w=600&h=400&fit=crop",
+    "https://images.unsplash.com/photo-1556821840-3a63f95609a7?w=600&h=400&fit=crop",
+    "https://images.unsplash.com/photo-1490481651871-ab68de25d43d?w=600&h=400&fit=crop",
+    "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=600&h=400&fit=crop",
+    "https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=600&h=400&fit=crop",
+]
 
 def validate_image_url(url, timeout=10):
     """Verify image URL returns HTTP 200 via HEAD request."""
@@ -145,7 +151,7 @@ def validate_image_url(url, timeout=10):
     except Exception:
         return False
 
-def url:
+def get_valid_image_url(url):
     """Return url if valid, otherwise return a verified fallback."""
     if validate_image_url(url):
         return url
@@ -162,85 +168,36 @@ def strip_markdown_fences(text):
     stripped = re.sub(r'\n?```$', '', stripped.strip())
     return stripped.strip()
 
-
-def verify_generated_image(image_data, title, niche_desc="blog"):
-    """Use Gemini Vision to verify image quality and relevance."""
-    try:
-        from google.genai import types
-        prompt = (
-            f"Analyze this image for a blog post titled \"{title}\". "
-            f"Site type: {niche_desc}. "
-            "Answer: Is it relevant? Any watermarks/logos/text? Is quality OK? "
-            "Reply with just PASS or FAIL and a short reason."
-        )
-        resp = gemini_client.models.generate_content(
-            model=GEMINI_MODEL,
-            contents=[
-                types.Content(parts=[
-                    types.Part(text=prompt),
-                    types.Part(inline_data=types.Blob(mime_type="image/webp", data=image_data)),
-                ])
-            ],
-        )
-        text = resp.candidates[0].content.parts[0].text if resp.candidates else ""
-        if "FAIL" in text.upper()[:20]:
-            print(f"  Vision AI FAIL: {text[:100]}")
-            return False
-        print(f"  Vision AI PASS: {text[:80]}")
-        return True
-    except Exception as e:
-        print(f"  Vision AI error (skipping): {str(e)[:80]}")
-        return True  # Don't block on Vision errors
-
-
 def generate_blog_image(keyword, title):
-    """Generate blog image with Gemini, save LOCALLY as .webp. Never returns external URL."""
-    slug = re.sub(r'[^a-z0-9]+', '-', keyword.lower()).strip('-')
-    img_dir = os.path.join(WEB_ROOT, "public", "images", "guides")
-    os.makedirs(img_dir, exist_ok=True)
-    img_path = os.path.join(img_dir, f"{slug}.webp")
-    local_url = f"/images/guides/{slug}.webp"
-
-    if os.path.exists(img_path) and os.path.getsize(img_path) > 500:
-        print(f"Image exists: {img_path}")
-        return local_url
-
-    print(f"Generating local image: {title} ({IMAGE_MODEL})")
-    prompt = (
-        "Create a high-quality blog hero image. "
-        "Stylish fashion blog imagery, clean editorial look, lifestyle photography "
-        f"Topic: '{title[:80]}'. 16:9 aspect ratio. No text or watermarks."
-    )
-
-    for attempt in range(3):
-        try:
-            response = gemini_client.models.generate_content(model=IMAGE_MODEL, contents=prompt)
-            if response.candidates and response.candidates[0].content.parts:
-                for part in response.candidates[0].content.parts:
-                    if hasattr(part, 'inline_data') and part.inline_data:
-                        img_bytes = part.inline_data.data
-                        # Vision AI quality check
-                        if not verify_generated_image(img_bytes, title):
-                            print(f"  Rejected by Vision AI, retrying ({attempt+1}/3)")
-                            time.sleep(3)
-                            continue
-                        with open(img_path, "wb") as f:
-                            f.write(img_bytes)
-                        if os.path.getsize(img_path) > 500:
-                            print(f"Image saved: {img_path} ({os.path.getsize(img_path):,}B)")
-                            return local_url
-            print(f"No image data (attempt {attempt+1}/3)")
-        except Exception as e:
-            err = str(e)
-            if "429" in err or "quota" in err.lower():
-                print(f"Rate limited, waiting {30*(attempt+1)}s...")
-                time.sleep(30 * (attempt + 1))
-            else:
-                print(f"Image error: {err[:150]}")
-        time.sleep(5)
-
-    print("All retries failed, using placeholder")
-    return local_url
+    """Generate a blog hero image using Gemini image model."""
+    print(f"Generating image for: {title} (Gemini {IMAGE_MODEL})")
+    try:
+        img_prompt = (
+            f"Create a stylish, high-quality fashion blog hero image for '{keyword}'. "
+            f"Title: '{title}'. Modern, clean aesthetic. No text overlay. "
+            f"Photorealistic fashion photography style, soft lighting, 16:9 aspect ratio."
+        )
+        response = gemini_client.models.generate_content(
+            model=IMAGE_MODEL,
+            contents=img_prompt,
+        )
+        # Save image if binary data returned
+        if response.candidates and response.candidates[0].content.parts:
+            for part in response.candidates[0].content.parts:
+                if hasattr(part, 'inline_data') and part.inline_data:
+                    img_dir = os.path.join(WEB_ROOT, "public", "images", "generated")
+                    os.makedirs(img_dir, exist_ok=True)
+                    slug = re.sub(r'[^a-z0-9]+', '-', keyword.lower()).strip('-')
+                    img_filename = f"{datetime.now().strftime('%Y%m%d')}_{slug}.png"
+                    img_path = os.path.join(img_dir, img_filename)
+                    with open(img_path, "wb") as f:
+                        f.write(part.inline_data.data)
+                    print(f"Image saved: {img_path}")
+                    return f"/images/generated/{img_filename}"
+        print("No image data in response, using fallback")
+    except Exception as e:
+        print(f"Image generation failed: {e}")
+    return get_valid_image_url(FALLBACK_IMAGES[0])
 
 
 def generate_targeted_blog(keyword):
@@ -359,7 +316,7 @@ def update_site_registry(slug, data):
     date: '{datetime.now().strftime('%Y-%m-%d')}',
     tag: '{data['meta'].get('tag', 'New')}',
     emoji: '{data['meta'].get('emoji', '✨')}',
-    image: '{data.get("image_url", FALLBACK_IMAGES[0])}',
+    image: '{get_valid_image_url(data.get("image_url", FALLBACK_IMAGES[0]))}',
     affiliateProducts: [],
   }},
 """
@@ -371,41 +328,6 @@ def update_site_registry(slug, data):
         with open(GUIDES_DATA_PATH, "w", encoding="utf-8") as f:
             f.write(updated_content)
         print("Site registry updated.")
-
-
-def validate_images_before_push():
-    """Pre-push: ensure all image refs in guides-data.ts are local and exist."""
-    guides_path = os.path.join(WEB_ROOT, "src", "lib", "guides-data.ts")
-    if not os.path.exists(guides_path):
-        return True, []
-    with open(guides_path, "r", encoding="utf-8") as f:
-        content = f.read()
-    issues = []
-    import re as _re
-    for m in _re.finditer(r"slug:\s*['"]([^'"]+)['"]", content):
-        slug = m.group(1)
-        # Find the image field near this slug
-        block_end = content.find("}", m.start())
-        block = content[m.start():block_end] if block_end > m.start() else ""
-        img_m = _re.search(r"image:\s*['"]([^'"]+)['"]", block)
-        if not img_m:
-            continue
-        img_url = img_m.group(1)
-        if img_url.startswith("http"):
-            issues.append(f"{slug}: EXTERNAL - {img_url[:60]}")
-        elif img_url.startswith("/"):
-            local = os.path.join(WEB_ROOT, "public", img_url.lstrip("/"))
-            if not os.path.exists(local):
-                issues.append(f"{slug}: MISSING - {local}")
-            elif os.path.getsize(local) < 100:
-                issues.append(f"{slug}: TOO SMALL")
-    if issues:
-        print(f"IMAGE VALIDATION: {len(issues)} issues")
-        for iss in issues[:5]:
-            print(f"  - {iss}")
-    else:
-        print("IMAGE VALIDATION: all local and valid")
-    return len(issues) == 0, issues
 
 def save_and_push(data):
     """Saves content locally and pushes to GitHub."""
@@ -433,12 +355,6 @@ def save_and_push(data):
     status = subprocess.run(["git", "status", "--porcelain"], capture_output=True, text=True).stdout
     if status:
         subprocess.run(["git", "commit", "-m", f"Style Guide: {data['blog_title']}"], check=True)
-
-        # Pre-push image validation
-        valid, issues = validate_images_before_push()
-        if not valid:
-            print(f'WARNING: {len(issues)} image issues found')
-
         subprocess.run(["git", "push", "origin", "main"], capture_output=True)
         print(f"Successfully synced: {data['blog_title']}")
 
