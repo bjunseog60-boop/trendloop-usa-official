@@ -33,6 +33,19 @@ export const categories = [
 
 export const guides: StyleGuide[] = [
   {
+    slug: 'maximalist-vintage-revival-your-nobs-style-guide-to-the-trend-taking-over-tiktok',
+    title: 'Maximalist Vintage Revival: Your No-BS Style Guide to the Trend Taking Over TikTok',
+    category: 'Fashion & Style',
+    description: 'Your ultimate style guide to the maximalist vintage revival trend. Get outfit ideas, learn how to wear bold retro layers, and shop the wardrobe essentials dominating TikTok and Instagram.',
+    readTime: '10 min',
+    date: '2026-02-21',
+    tag: 'maximalist vintage revival, outfit ideas, style guide, how to wear, vintage fashion, TikTok fashion trends, layering outfits, retro style',
+    emoji: '✨',
+    image: 'https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=600&h=400&fit=crop',
+    affiliateProducts: [],
+  },
+
+  {
     slug: 'techintegrated-streetwear-is-taking-over-your-fyp--heres-how-to-wear-it',
     title: 'Tech-Integrated Streetwear Is Taking Over Your FYP — Here's How to Wear It',
     category: 'Style Guide & Outfit Ideas',
