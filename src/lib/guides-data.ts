@@ -33,6 +33,19 @@ export const categories = [
 
 export const guides: StyleGuide[] = [
   {
+    slug: 'maximalist-vintage-revival-is-taking-over-your-fyp--heres-how-to-wear-it',
+    title: 'Maximalist Vintage Revival Is Taking Over Your FYP — Here's How to Wear It',
+    category: 'Style Guide',
+    description: 'The maximalist vintage revival trend is all over TikTok and Instagram. Get specific outfit ideas, styling tips on how to wear bold prints and layered looks, plus shop the essential pieces to nail this aesthetic.',
+    readTime: '10 min',
+    date: '2026-02-21',
+    tag: 'maximalist vintage revival, outfit ideas, style guide, how to wear, vintage fashion, TikTok trends, layered outfits, bold prints, fashion tips 2025',
+    emoji: '🌹',
+    image: 'https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=600&h=400&fit=crop',
+    affiliateProducts: [],
+  },
+
+  {
     slug: 'eclectic-grandpa-style-the-ultimate-style-guide-to-tiktoks-coziest-trend',
     title: 'Eclectic Grandpa Style: The Ultimate Style Guide to TikTok's Coziest Trend',
     category: 'Style Guide',
