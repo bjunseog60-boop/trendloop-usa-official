@@ -33,6 +33,19 @@ export const categories = [
 
 export const guides: StyleGuide[] = [
   {
+    slug: 'balletcore-essentials-your-ultimate-style-guide-to-the-prettiest-trend-on-tiktok',
+    title: 'Balletcore Essentials: Your Ultimate Style Guide to the Prettiest Trend on TikTok',
+    category: 'Fashion & Style',
+    description: 'Your complete balletcore essentials style guide with outfit ideas, styling tips, and affordable shop picks. Learn how to wear the TikTok-viral ballet aesthetic IRL.',
+    readTime: '10 min',
+    date: '2026-02-21',
+    tag: 'balletcore essentials',
+    emoji: '🩰',
+    image: 'https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=600&h=400&fit=crop',
+    affiliateProducts: [],
+  },
+
+  {
     slug: 'indie-sleaze-revival-your-ultimate-style-guide-for-2024',
     title: 'Indie Sleaze Revival: Your Ultimate Style Guide for 2024',
     category: 'Fashion & Style',
