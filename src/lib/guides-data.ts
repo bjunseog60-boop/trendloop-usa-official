@@ -33,6 +33,19 @@ export const categories = [
 
 export const guides: StyleGuide[] = [
   {
+    slug: 'indie-sleaze-revival-your-ultimate-style-guide-for-2024',
+    title: 'Indie Sleaze Revival: Your Ultimate Style Guide for 2024',
+    category: 'Fashion & Style',
+    description: 'The indie sleaze revival is taking over TikTok and Instagram. Get messy-chic outfit ideas, styling tips, and shop the essentials in this ultimate style guide for 2024.',
+    readTime: '10 min',
+    date: '2026-02-21',
+    tag: 'indie sleaze revival',
+    emoji: '🖤',
+    image: 'https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=600&h=400&fit=crop',
+    affiliateProducts: [],
+  },
+
+  {
     slug: 'techintegrated-streetwear-is-taking-over-your-fyp--heres-how-to-wear-it',
     title: 'Tech-Integrated Streetwear Is Taking Over Your FYP — Here's How to Wear It',
     category: 'Style Guide',
