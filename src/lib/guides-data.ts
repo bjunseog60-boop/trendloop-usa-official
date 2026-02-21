@@ -35,6 +35,19 @@ export const guides: StyleGuide[] = [
   {
     slug: 'techintegrated-streetwear-is-taking-over-your-fyp--heres-how-to-wear-it',
     title: 'Tech-Integrated Streetwear Is Taking Over Your FYP — Here's How to Wear It',
+    category: 'Streetwear & Fashion Trends',
+    description: 'Your ultimate style guide to tech-integrated streetwear — the viral TikTok trend blending futuristic fabrics, utility layers, and smart accessories. Get outfit ideas and shop the essentials.',
+    readTime: '10 min',
+    date: '2026-02-21',
+    tag: 'tech-integrated streetwear',
+    emoji: '🖤',
+    image: 'https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=600&h=400&fit=crop',
+    affiliateProducts: [],
+  },
+
+  {
+    slug: 'techintegrated-streetwear-is-taking-over-your-fyp--heres-how-to-wear-it',
+    title: 'Tech-Integrated Streetwear Is Taking Over Your FYP — Here's How to Wear It',
     category: 'Style Guide',
     description: 'Your ultimate style guide to tech-integrated streetwear — the viral TikTok trend blending futuristic fabrics, smart accessories, and utility silhouettes. Get outfit ideas and shop the essentials.',
     readTime: '10 min',
