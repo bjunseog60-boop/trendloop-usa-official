@@ -41,7 +41,7 @@ export const guides: StyleGuide[] = [
     date: '2026-02-21',
     tag: 'tech-integrated streetwear',
     emoji: '⚡',
-    image: '/images/guides/korean-fashion-trends-2026.png',
+    image: 'https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=600&h=400&fit=crop',
     affiliateProducts: [],
   },
 
@@ -54,7 +54,7 @@ export const guides: StyleGuide[] = [
     date: '2026-02-21',
     tag: 'tech-integrated streetwear',
     emoji: '⚡',
-    image: '/images/guides/korean-fashion-trends-2026.png',
+    image: 'https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=600&h=400&fit=crop',
     affiliateProducts: [],
   },
 
@@ -67,7 +67,7 @@ export const guides: StyleGuide[] = [
     date: '2026-02-21',
     tag: 'tech-integrated streetwear, outfit ideas, style guide, how to wear, techwear fashion, streetwear 2025, TikTok fashion trends',
     emoji: '⚡',
-    image: '/images/guides/korean-fashion-trends-2026.png',
+    image: 'https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=600&h=400&fit=crop',
     affiliateProducts: [],
   },
 
@@ -80,7 +80,7 @@ export const guides: StyleGuide[] = [
     date: '2026-02-21',
     tag: 'tech-integrated streetwear',
     emoji: '⚡',
-    image: '/images/guides/korean-fashion-trends-2026.png',
+    image: 'https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=600&h=400&fit=crop',
     affiliateProducts: [],
   },
 
@@ -93,7 +93,7 @@ export const guides: StyleGuide[] = [
     date: '2026-02-21',
     tag: 'tech-integrated streetwear',
     emoji: '⚡',
-    image: '/images/guides/korean-fashion-trends-2026.png',
+    image: 'https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=600&h=400&fit=crop',
     affiliateProducts: [],
   },
 
@@ -106,7 +106,7 @@ export const guides: StyleGuide[] = [
     date: '2026-02-21',
     tag: 'tech-integrated streetwear',
     emoji: '⚡',
-    image: '/images/guides/korean-fashion-trends-2026.png',
+    image: 'https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=600&h=400&fit=crop',
     affiliateProducts: [],
   },
 
@@ -119,7 +119,7 @@ export const guides: StyleGuide[] = [
     date: '2026-02-21',
     tag: 'tech-integrated streetwear',
     emoji: '⚡',
-    image: '/images/guides/korean-fashion-trends-2026.png',
+    image: 'https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=600&h=400&fit=crop',
     affiliateProducts: [],
   },
 
@@ -132,7 +132,7 @@ export const guides: StyleGuide[] = [
     date: '2026-02-21',
     tag: 'tech-integrated streetwear, outfit ideas, style guide, how to wear, techwear, streetwear trends 2024, TikTok fashion, futuristic fashion',
     emoji: '⚡',
-    image: '/images/guides/korean-fashion-trends-2026.png',
+    image: 'https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=600&h=400&fit=crop',
     affiliateProducts: [],
   },
 
@@ -145,7 +145,7 @@ export const guides: StyleGuide[] = [
     date: '2026-02-21',
     tag: 'tech-integrated streetwear',
     emoji: '⚡',
-    image: '/images/guides/korean-fashion-trends-2026.png',
+    image: 'https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=600&h=400&fit=crop',
     affiliateProducts: [],
   },
 
@@ -158,7 +158,7 @@ export const guides: StyleGuide[] = [
     date: '2026-02-21',
     tag: 'tech-integrated streetwear',
     emoji: '🖤',
-    image: '/images/guides/korean-fashion-trends-2026.png',
+    image: 'https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=600&h=400&fit=crop',
     affiliateProducts: [],
   },
 
@@ -171,7 +171,7 @@ export const guides: StyleGuide[] = [
     date: '2026-02-21',
     tag: 'tech-integrated streetwear',
     emoji: '⚡',
-    image: '/images/guides/korean-fashion-trends-2026.png',
+    image: 'https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=600&h=400&fit=crop',
     affiliateProducts: [],
   },
 
@@ -184,7 +184,7 @@ export const guides: StyleGuide[] = [
     date: '2026-02-21',
     tag: 'tech-integrated streetwear, outfit ideas, style guide, how to wear, streetwear trends 2025, techwear fashion, TikTok fashion trends',
     emoji: '⚡',
-    image: '/images/guides/korean-fashion-trends-2026.png',
+    image: 'https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=600&h=400&fit=crop',
     affiliateProducts: [],
   },
 
@@ -197,7 +197,7 @@ export const guides: StyleGuide[] = [
     date: '2026-02-21',
     tag: 'tech-integrated streetwear',
     emoji: '⚡',
-    image: '/images/guides/korean-fashion-trends-2026.png',
+    image: 'https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=600&h=400&fit=crop',
     affiliateProducts: [],
   },
 
@@ -210,7 +210,7 @@ export const guides: StyleGuide[] = [
     date: '2026-02-21',
     tag: 'maximalist vintage revival, outfit ideas, style guide, how to wear, vintage fashion, TikTok fashion trends, layering outfits, retro style',
     emoji: '✨',
-    image: '/images/guides/korean-fashion-trends-2026.png',
+    image: 'https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=600&h=400&fit=crop',
     affiliateProducts: [],
   },
 
@@ -223,7 +223,7 @@ export const guides: StyleGuide[] = [
     date: '2026-02-21',
     tag: 'tech-integrated streetwear, outfit ideas, style guide, how to wear, techwear fashion, streetwear trends 2025, TikTok fashion',
     emoji: '🖤',
-    image: '/images/guides/korean-fashion-trends-2026.png',
+    image: 'https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=600&h=400&fit=crop',
     affiliateProducts: [],
   },
 
@@ -236,7 +236,7 @@ export const guides: StyleGuide[] = [
     date: '2026-02-21',
     tag: 'maximalist vintage revival, outfit ideas, style guide, how to wear, vintage fashion, TikTok trends, layered outfits, bold prints, fashion tips 2025',
     emoji: '🌹',
-    image: '/images/guides/korean-fashion-trends-2026.png',
+    image: 'https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=600&h=400&fit=crop',
     affiliateProducts: [],
   },
 
@@ -249,7 +249,7 @@ export const guides: StyleGuide[] = [
     date: '2026-02-21',
     tag: 'eclectic grandpa style',
     emoji: '🧥',
-    image: '/images/guides/korean-fashion-trends-2026.png',
+    image: 'https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=600&h=400&fit=crop',
     affiliateProducts: [],
   },
 
@@ -262,7 +262,7 @@ export const guides: StyleGuide[] = [
     date: '2026-02-21',
     tag: 'balletcore essentials',
     emoji: '🩰',
-    image: '/images/guides/korean-fashion-trends-2026.png',
+    image: 'https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=600&h=400&fit=crop',
     affiliateProducts: [],
   },
 
@@ -275,7 +275,7 @@ export const guides: StyleGuide[] = [
     date: '2026-02-21',
     tag: 'indie sleaze revival',
     emoji: '🖤',
-    image: '/images/guides/korean-fashion-trends-2026.png',
+    image: 'https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=600&h=400&fit=crop',
     affiliateProducts: [],
   },
 
@@ -288,7 +288,7 @@ export const guides: StyleGuide[] = [
     date: '2026-02-21',
     tag: 'tech-integrated streetwear',
     emoji: '⚡',
-    image: '/images/guides/korean-fashion-trends-2026.png',
+    image: 'https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=600&h=400&fit=crop',
     affiliateProducts: [],
   },
 
@@ -301,7 +301,7 @@ export const guides: StyleGuide[] = [
     date: '2026-02-21',
     tag: 'cottagecore spring outfits, spring style guide, cottagecore outfit ideas, how to wear cottagecore, spring fashion 2025',
     emoji: '🌿',
-    image: '/images/guides/korean-fashion-trends-2026.png',
+    image: 'https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=600&h=400&fit=crop',
     affiliateProducts: [],
   },
 
@@ -314,7 +314,7 @@ export const guides: StyleGuide[] = [
     date: '2026-02-21',
     tag: 'soft girl aesthetic, outfit ideas, style guide, how to wear, pastel outfits, TikTok fashion, 2025 trends, feminine style',
     emoji: '🎀',
-    image: '/images/guides/korean-fashion-trends-2026.png',
+    image: 'https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=600&h=400&fit=crop',
     affiliateProducts: [],
   },
 
@@ -327,7 +327,7 @@ export const guides: StyleGuide[] = [
     date: '2026-02-21',
     tag: 'dark academia fashion',
     emoji: '📚',
-    image: '/images/guides/korean-fashion-trends-2026.png',
+    image: 'https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=600&h=400&fit=crop',
     affiliateProducts: [],
   },
 
@@ -340,7 +340,7 @@ export const guides: StyleGuide[] = [
     date: '2026-02-21',
     tag: 'soft girl aesthetic',
     emoji: '🌸',
-    image: '/images/guides/korean-fashion-trends-2026.png',
+    image: 'https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=600&h=400&fit=crop',
     affiliateProducts: [],
   },
 
@@ -353,7 +353,7 @@ export const guides: StyleGuide[] = [
     date: '2026-02-21',
     tag: 'coquette aesthetic 2026',
     emoji: '🎀',
-    image: '/images/guides/korean-fashion-trends-2026.png',
+    image: 'https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=600&h=400&fit=crop',
     affiliateProducts: [],
   },
 
@@ -366,7 +366,7 @@ export const guides: StyleGuide[] = [
     date: '2026-02-20',
     tag: 'clean girl aesthetic 2026',
     emoji: '🤍',
-    image: '/images/guides/korean-fashion-trends-2026.png',
+    image: 'https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=600&h=400&fit=crop',
     affiliateProducts: [],
   },
 
@@ -379,7 +379,7 @@ export const guides: StyleGuide[] = [
     date: '2026-02-20',
     tag: 'office siren fashion, style guide, outfit ideas, how to wear, workwear aesthetic, TikTok fashion trends, corporate fashion',
     emoji: '🖤',
-    image: '/images/guides/korean-fashion-trends-2026.png',
+    image: 'https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=600&h=400&fit=crop',
     affiliateProducts: [],
   },
 
@@ -392,7 +392,7 @@ export const guides: StyleGuide[] = [
     date: '2026-02-20',
     tag: 'soft girl aesthetic',
     emoji: '🌸',
-    image: '/images/guides/korean-fashion-trends-2026.png',
+    image: 'https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=600&h=400&fit=crop',
     affiliateProducts: [],
   },
 
@@ -405,7 +405,7 @@ export const guides: StyleGuide[] = [
     date: '2026-02-20',
     tag: 'mob wife aesthetic',
     emoji: '🖤',
-    image: '/images/guides/korean-fashion-trends-2026.png',
+    image: 'https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=600&h=400&fit=crop',
     affiliateProducts: [],
   },
 
@@ -418,7 +418,7 @@ export const guides: StyleGuide[] = [
     date: '2026-02-20',
     tag: 'cottagecore spring outfits',
     emoji: '🌿',
-    image: '/images/guides/korean-fashion-trends-2026.png',
+    image: 'https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=600&h=400&fit=crop',
     affiliateProducts: [],
   },
 
@@ -450,7 +450,7 @@ export const guides: StyleGuide[] = [
     date: '2026-02-20',
     tag: 'coastal grandmother style',
     emoji: '🐚',
-    image: '/images/guides/korean-fashion-trends-2026.png',
+    image: 'https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=600&h=400&fit=crop',
     affiliateProducts: [],
   },
 
@@ -463,7 +463,7 @@ export const guides: StyleGuide[] = [
     date: '2026-02-20',
     tag: 'Editor Pick',
     emoji: '🤍',
-    image: '/images/guides/eclectic-grandpa-style-the-ultimate-gen-z-trend-guide.png',
+    image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&h=400&fit=crop',
     affiliateProducts: [
       { name: 'Slim-cut tailored trousers in wool crepe', brand: 'Amazon', price: '$--', url: 'https://www.amazon.com/s?k=Slim-cut+tailored+trousers+in+wool+crepe&tag=styleme-20', tag: 'Editor Pick', image: 'https://images.unsplash.com/photo-1594938298603-c8148c4dae35?w=200&h=200&fit=crop' },
       { name: 'Bias-cut silk slip dress', brand: 'Amazon', price: '$--', url: 'https://www.amazon.com/s?k=Bias-cut+silk+slip+dress&tag=styleme-20', image: 'https://images.unsplash.com/photo-1595777457583-95e059d581b8?w=200&h=200&fit=crop' },
@@ -482,7 +482,7 @@ export const guides: StyleGuide[] = [
     date: '2026-02-19',
     tag: 'Hot',
     emoji: '🎀',
-    image: '/images/guides/coquette-aesthetic-guide-feminine-style-2026.png',
+    image: 'https://images.unsplash.com/photo-1518577915332-c2a19f149a75?w=600&h=400&fit=crop',
     affiliateProducts: [
       { name: 'Satin Bow Hair Clips Set', brand: 'Amazon', price: '$12', url: 'https://amzn.to/4rVjOFg', tag: 'Editor Pick', image: 'https://images.unsplash.com/photo-1596944924616-7b38e7cfac36?w=200&h=200&fit=crop' },
       { name: 'Lace Trim Camisole Top', brand: 'Amazon', price: '$22', url: 'https://amzn.to/3ZCaw4S', image: 'https://images.unsplash.com/photo-1564257631407-4deb1f99d992?w=200&h=200&fit=crop' },
@@ -500,7 +500,7 @@ export const guides: StyleGuide[] = [
     date: '2026-02-19',
     tag: 'gorpcore-style-guide',
     emoji: '🥾',
-    image: '/images/guides/gorpcore-for-women-your-complete-style-guide.png',
+    image: 'https://images.unsplash.com/photo-1551632811-561732d1e306?w=600&h=400&fit=crop',
     affiliateProducts: [
       { name: 'Waterproof Hiking Boots', brand: 'Amazon', price: '$58', url: 'https://amzn.to/4rVjOFg', tag: 'Editor Pick', image: 'https://images.unsplash.com/photo-1560769629-975ec94e6a86?w=200&h=200&fit=crop' },
       { name: 'Fleece Half-Zip Pullover', brand: 'Amazon', price: '$35', url: 'https://amzn.to/3ZCaw4S', image: 'https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?w=200&h=200&fit=crop' },
@@ -517,7 +517,7 @@ export const guides: StyleGuide[] = [
     date: '2026-02-19',
     tag: 'cottagecore',
     emoji: '🌸',
-    image: '/images/guides/cottagecore-spring-outfits-that-are-taking-over-tiktok.png',
+    image: 'https://images.unsplash.com/photo-1564257631407-4deb1f99d992?w=600&h=400&fit=crop',
     affiliateProducts: [
       { name: 'Floral Midi Wrap Dress', brand: 'Amazon', price: '$38', url: 'https://amzn.to/3OhrhzW', tag: 'Best Seller', image: 'https://images.unsplash.com/photo-1572804013309-59a88b7e92f1?w=200&h=200&fit=crop' },
       { name: 'Straw Sun Hat', brand: 'Amazon', price: '$18', url: 'https://amzn.to/40drBCf', image: 'https://images.unsplash.com/photo-1521369909029-2afed882baee?w=200&h=200&fit=crop' },
@@ -534,7 +534,7 @@ export const guides: StyleGuide[] = [
     date: '2026-02-19',
     tag: 'Hot',
     emoji: '✨',
-    image: '/images/guides/clean-girl-aesthetic-2026-the-effortless-style-guide-everyones-obsessing-over.png',
+    image: 'https://images.unsplash.com/photo-1529139574466-a303027c1d8b?w=600&h=400&fit=crop',
     affiliateProducts: [
       { name: 'Gold Hoop Earrings Set', brand: 'Amazon', price: '$15', url: 'https://amzn.to/4rVjOFg', tag: 'Trending', image: 'https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?w=200&h=200&fit=crop' },
       { name: 'Slicked-Back Headband Set', brand: 'Amazon', price: '$12', url: 'https://amzn.to/3Mro3JB', image: 'https://images.unsplash.com/photo-1596944924616-7b38e7cfac36?w=200&h=200&fit=crop' },
@@ -551,7 +551,7 @@ export const guides: StyleGuide[] = [
     date: '2026-02-19',
     tag: 'Hot',
     emoji: '🩰',
-    image: '/images/guides/balletcore-essentials-how-to-master-this-viral-trend.png',
+    image: 'https://images.unsplash.com/photo-1518834107812-67b0b7c58434?w=600&h=400&fit=crop',
     affiliateProducts: [
       { name: 'Wrap Ballet Flats', brand: 'Amazon', price: '$32', url: 'https://amzn.to/3ZCaw4S', tag: 'Editor Pick', image: 'https://images.unsplash.com/photo-1543163521-1bf539c55dd2?w=200&h=200&fit=crop' },
       { name: 'Mesh Overlay Midi Skirt', brand: 'Amazon', price: '$28', url: 'https://amzn.to/40drBCf', image: 'https://images.unsplash.com/photo-1583496661160-fb5886a0aaaa?w=200&h=200&fit=crop' },
@@ -568,7 +568,7 @@ export const guides: StyleGuide[] = [
     date: '2026-02-19',
     tag: 'Hot',
     emoji: '🎒',
-    image: '/images/guides/gorpcore-for-women-3-styling-tips-outfit-ideas-that-own-tiktok.png',
+    image: 'https://images.unsplash.com/photo-1539109136881-3be0616acf4b?w=600&h=400&fit=crop',
     affiliateProducts: [
       { name: 'Puffer Vest', brand: 'Amazon', price: '$42', url: 'https://amzn.to/4rVjOFg', tag: 'Trending', image: 'https://images.unsplash.com/photo-1591047139829-d91aecb6caea?w=200&h=200&fit=crop' },
       { name: 'Trail Running Sneakers', brand: 'Amazon', price: '$55', url: 'https://amzn.to/3Mro3JB', image: 'https://images.unsplash.com/photo-1560769629-975ec94e6a86?w=200&h=200&fit=crop' },
@@ -585,7 +585,7 @@ export const guides: StyleGuide[] = [
     date: '2026-02-19',
     tag: 'Hot',
     emoji: '🎩',
-    image: '/images/guides/eclectic-grandpa-style-the-ultimate-gen-z-trend-guide.png',
+    image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&h=400&fit=crop',
     affiliateProducts: [
       { name: 'Oversized Knit Cardigan', brand: 'Amazon', price: '$38', url: 'https://amzn.to/3ZCaw4S', tag: 'Editor Pick', image: 'https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?w=200&h=200&fit=crop' },
       { name: 'Corduroy Wide-Leg Trousers', brand: 'Amazon', price: '$34', url: 'https://amzn.to/40drBCf', image: 'https://images.unsplash.com/photo-1594938298603-c8148c4dae35?w=200&h=200&fit=crop' },
@@ -602,7 +602,7 @@ export const guides: StyleGuide[] = [
     date: '2026-02-19',
     tag: 'Hot',
     emoji: '👓',
-    image: '/images/guides/professional-outfits-women-2026.png',
+    image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=600&h=400&fit=crop',
     affiliateProducts: [
       { name: 'Fitted Pencil Skirt', brand: 'Amazon', price: '$28', url: 'https://amzn.to/3OhrhzW', tag: 'Best Seller', image: 'https://images.unsplash.com/photo-1583496661160-fb5886a0aaaa?w=200&h=200&fit=crop' },
       { name: 'Sheer Button-Down Blouse', brand: 'Amazon', price: '$24', url: 'https://amzn.to/3ZCaw4S', image: 'https://images.unsplash.com/photo-1564257631407-4deb1f99d992?w=200&h=200&fit=crop' },
@@ -619,7 +619,7 @@ export const guides: StyleGuide[] = [
     date: '2026-02-19',
     tag: 'Hot',
     emoji: '🖤',
-    image: '/images/guides/dark-feminine-aesthetic-guide-2026.png',
+    image: 'https://images.unsplash.com/photo-1509631179647-0177331693ae?w=600&h=400&fit=crop',
     affiliateProducts: [
       { name: 'Distressed Band Tee', brand: 'Amazon', price: '$22', url: 'https://amzn.to/3Mro3JB', tag: 'Trending', image: 'https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?w=200&h=200&fit=crop' },
       { name: 'Faux Leather Mini Skirt', brand: 'Amazon', price: '$26', url: 'https://amzn.to/40drBCf', image: 'https://images.unsplash.com/photo-1583496661160-fb5886a0aaaa?w=200&h=200&fit=crop' },
@@ -636,7 +636,7 @@ export const guides: StyleGuide[] = [
     date: '2026-02-19',
     tag: 'Hot',
     emoji: '🎀',
-    image: '/images/guides/soft-girl-aesthetic-101-your-dreamy-style-guide.png',
+    image: 'https://images.unsplash.com/photo-1525507119028-ed4c629a60a3?w=600&h=400&fit=crop',
     affiliateProducts: [
       { name: 'Pastel Cardigan with Pearl Buttons', brand: 'Amazon', price: '$30', url: 'https://amzn.to/3ZCaw4S', tag: 'Editor Pick', image: 'https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?w=200&h=200&fit=crop' },
       { name: 'Pleated Tennis Skirt', brand: 'Amazon', price: '$22', url: 'https://amzn.to/3OhrhzW', image: 'https://images.unsplash.com/photo-1583496661160-fb5886a0aaaa?w=200&h=200&fit=crop' },
@@ -653,7 +653,7 @@ export const guides: StyleGuide[] = [
     date: '2026-02-19',
     tag: 'Hot',
     emoji: '🧥',
-    image: '/images/guides/mob-wife-aesthetic-the-bold-luxe-trend-taking-over-2024.png',
+    image: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=600&h=400&fit=crop',
     affiliateProducts: [
       { name: 'Faux Fur Coat', brand: 'Amazon', price: '$65', url: 'https://amzn.to/4kNVNxy', tag: 'Editor Pick', image: 'https://images.unsplash.com/photo-1591047139829-d91aecb6caea?w=200&h=200&fit=crop' },
       { name: 'Chunky Gold Chain Necklace', brand: 'Amazon', price: '$18', url: 'https://amzn.to/3Mro3JB', image: 'https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?w=200&h=200&fit=crop' },
@@ -670,7 +670,7 @@ export const guides: StyleGuide[] = [
     date: '2026-02-19',
     tag: 'Hot',
     emoji: '🌹',
-    image: '/images/guides/stitch-fix-vs-personal-stylist.png',
+    image: 'https://images.unsplash.com/photo-1552374196-1ab2a1c593e8?w=600&h=400&fit=crop',
     affiliateProducts: [
       { name: 'Vintage Patchwork Jacket', brand: 'Amazon', price: '$48', url: 'https://amzn.to/3ZCaw4S', tag: 'Trending', image: 'https://images.unsplash.com/photo-1591047139829-d91aecb6caea?w=200&h=200&fit=crop' },
       { name: 'Printed Maxi Skirt', brand: 'Amazon', price: '$34', url: 'https://amzn.to/3OhrhzW', image: 'https://images.unsplash.com/photo-1572804013309-59a88b7e92f1?w=200&h=200&fit=crop' },
@@ -688,7 +688,7 @@ export const guides: StyleGuide[] = [
     date: '2026-02-17',
     tag: 'Pillar Guide',
     emoji: '👔',
-    image: '/images/guides/quiet-luxury-style-guide-2026.png',
+    image: 'https://images.unsplash.com/photo-1487222477894-8943e31ef7b2?w=600&h=400&fit=crop',
     affiliateProducts: [
       { name: 'Tailored Blazer', brand: 'Amazon', price: '$49', url: 'https://amzn.to/4rVjOFg', tag: 'Editor Pick', image: 'https://images.unsplash.com/photo-1591369822096-ffd140ec948f?w=200&h=200&fit=crop' },
       { name: 'High-Rise Wide Leg Pants', brand: 'Amazon', price: '$38', url: 'https://amzn.to/3ZCaw4S', image: 'https://images.unsplash.com/photo-1594938298603-c8148c4dae35?w=200&h=200&fit=crop' },
@@ -705,7 +705,7 @@ export const guides: StyleGuide[] = [
     date: '2026-02-15',
     tag: 'Trending',
     emoji: '👗',
-    image: '/images/guides/petite-fashion-guide-2026.png',
+    image: 'https://images.unsplash.com/photo-1485968579580-b6d095142e6e?w=600&h=400&fit=crop',
     affiliateProducts: [
       { name: 'Oversized Linen Shirt', brand: 'Amazon', price: '$28', url: 'https://amzn.to/4rVjOFg', tag: 'Best Value', image: 'https://images.unsplash.com/photo-1598554747436-c9293d6a588f?w=200&h=200&fit=crop' },
       { name: 'Straight Leg Jeans', brand: 'Amazon', price: '$39', url: 'https://amzn.to/4rfVnSQ', image: 'https://images.unsplash.com/photo-1541099649105-f69ad21f3246?w=200&h=200&fit=crop' },
@@ -721,7 +721,7 @@ export const guides: StyleGuide[] = [
     date: '2026-02-14',
     tag: 'Popular',
     emoji: '💃',
-    image: '/images/guides/first-date-outfits-every-vibe.png',
+    image: 'https://images.unsplash.com/photo-1492707892479-7bc8d5a4ee93?w=600&h=400&fit=crop',
     affiliateProducts: [
       { name: 'Satin Midi Dress', brand: 'Amazon', price: '$42', url: 'https://amzn.to/4tH7kT9', tag: 'Date Night Fave', image: 'https://images.unsplash.com/photo-1595777457583-95e059d581b8?w=200&h=200&fit=crop' },
       { name: 'Strappy Heels', brand: 'Amazon', price: '$45', url: 'https://amzn.to/3OhrhzW', image: 'https://images.unsplash.com/photo-1543163521-1bf539c55dd2?w=200&h=200&fit=crop' },
@@ -737,7 +737,7 @@ export const guides: StyleGuide[] = [
     date: '2026-02-12',
     tag: 'Evergreen',
     emoji: '💖',
-    image: '/images/guides/winter-to-spring-transition-outfits-2026.png',
+    image: 'https://images.unsplash.com/photo-1483985988355-763728e1935b?w=600&h=400&fit=crop',
     affiliateProducts: [
       { name: 'Wrap Dress (Hourglass)', brand: 'Amazon', price: '$36', url: 'https://amzn.to/4tH7kT9', image: 'https://images.unsplash.com/photo-1595777457583-95e059d581b8?w=200&h=200&fit=crop' },
       { name: 'A-Line Skirt (Pear)', brand: 'Amazon', price: '$28', url: 'https://amzn.to/3ZCaw4S', image: 'https://images.unsplash.com/photo-1594938298603-c8148c4dae35?w=200&h=200&fit=crop' },
@@ -753,7 +753,7 @@ export const guides: StyleGuide[] = [
     date: '2026-02-08',
     tag: 'Comparison',
     emoji: '🛍️',
-    image: '/images/guides/nordstrom-vs-asos-professional-women.png',
+    image: 'https://images.unsplash.com/photo-1441984904996-e0b6ba687e04?w=600&h=400&fit=crop',
     affiliateProducts: [
       { name: 'Work Blazer', brand: 'Amazon', price: '$49', url: 'https://amzn.to/4rVjOFg', tag: 'Top Pick', image: 'https://images.unsplash.com/photo-1591369822096-ffd140ec948f?w=200&h=200&fit=crop' },
       { name: 'Work Tote Bag', brand: 'Amazon', price: '$35', url: 'https://amzn.to/4anggFT', image: 'https://images.unsplash.com/photo-1584917865442-de89df76afd3?w=200&h=200&fit=crop' },
@@ -768,7 +768,7 @@ export const guides: StyleGuide[] = [
     date: '2026-02-06',
     tag: 'Seasonal',
     emoji: '🎉',
-    image: '/images/guides/best-dresses-for-wedding-guest-under-100.png',
+    image: 'https://images.unsplash.com/photo-1518609878373-06d740f60d8b?w=600&h=400&fit=crop',
     affiliateProducts: [
       { name: 'Wedding Guest Dress', brand: 'Amazon', price: '$42', url: 'https://amzn.to/4tH7kT9', tag: 'Best Seller', image: 'https://images.unsplash.com/photo-1595777457583-95e059d581b8?w=200&h=200&fit=crop' },
       { name: 'Elegant Heels', brand: 'Amazon', price: '$45', url: 'https://amzn.to/3OhrhzW', image: 'https://images.unsplash.com/photo-1543163521-1bf539c55dd2?w=200&h=200&fit=crop' },
@@ -783,7 +783,7 @@ export const guides: StyleGuide[] = [
     date: '2026-02-04',
     tag: 'Product Review',
     emoji: '👖',
-    image: '/images/guides/best-jeans-for-women-2026.png',
+    image: 'https://images.unsplash.com/photo-1541099649105-f69ad21f3246?w=600&h=400&fit=crop',
     affiliateProducts: [
       { name: 'Straight Leg Jeans', brand: 'Amazon', price: '$39', url: 'https://amzn.to/4rfVnSQ', tag: 'Best Overall', image: 'https://images.unsplash.com/photo-1541099649105-f69ad21f3246?w=200&h=200&fit=crop' },
       { name: 'Wide Leg Pants', brand: 'Amazon', price: '$38', url: 'https://amzn.to/3ZCaw4S', tag: 'Best Comfort', image: 'https://images.unsplash.com/photo-1594938298603-c8148c4dae35?w=200&h=200&fit=crop' },
@@ -798,7 +798,7 @@ export const guides: StyleGuide[] = [
     date: '2026-03-01',
     tag: 'New',
     emoji: '🌸',
-    image: '/images/guides/spring-workwear-capsule-2026.png',
+    image: 'https://images.unsplash.com/photo-1490481651871-ab68de25d43d?w=600&h=400&fit=crop',
     affiliateProducts: [
       { name: 'Linen Blazer', brand: 'Amazon', price: '$49', url: 'https://amzn.to/4rVjOFg', tag: 'Editor Pick', image: 'https://images.unsplash.com/photo-1591369822096-ffd140ec948f?w=200&h=200&fit=crop' },
       { name: 'Wide Leg Pants', brand: 'Amazon', price: '$38', url: 'https://amzn.to/3ZCaw4S', image: 'https://images.unsplash.com/photo-1594938298603-c8148c4dae35?w=200&h=200&fit=crop' },
@@ -814,7 +814,7 @@ export const guides: StyleGuide[] = [
     date: '2026-02-17',
     tag: 'New',
     emoji: '💼',
-    image: '/images/guides/professional-outfits-women-2026.png',
+    image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=600&h=400&fit=crop',
     affiliateProducts: [
       { name: 'Oversized Wool Blazer', brand: 'Amazon', price: '$49', url: 'https://amzn.to/4rVjOFg', tag: 'Editor Pick', image: 'https://images.unsplash.com/photo-1591369822096-ffd140ec948f?w=200&h=200&fit=crop' },
       { name: 'High-Waisted Trousers', brand: 'Amazon', price: '$38', url: 'https://amzn.to/3ZCaw4S', tag: 'Best Value', image: 'https://images.unsplash.com/photo-1594938298603-c8148c4dae35?w=200&h=200&fit=crop' },
@@ -831,7 +831,7 @@ export const guides: StyleGuide[] = [
     date: '2026-02-17',
     tag: 'Trending',
     emoji: '💕',
-    image: '/images/guides/brunch-outfits-women-2026.png',
+    image: 'https://images.unsplash.com/photo-1469334031218-e382a71b716b?w=600&h=400&fit=crop',
     affiliateProducts: [
       { name: 'Satin Midi Dress', brand: 'Amazon', price: '$42', url: 'https://amzn.to/4tH7kT9', tag: 'Editor Pick', image: 'https://images.unsplash.com/photo-1595777457583-95e059d581b8?w=200&h=200&fit=crop' },
       { name: 'Strappy Heeled Sandals', brand: 'Amazon', price: '$45', url: 'https://amzn.to/3OhrhzW', image: 'https://images.unsplash.com/photo-1543163521-1bf539c55dd2?w=200&h=200&fit=crop' },
@@ -848,7 +848,7 @@ export const guides: StyleGuide[] = [
     date: '2026-02-17',
     tag: 'Popular',
     emoji: '👖',
-    image: '/images/guides/best-jeans-every-body-type.png',
+    image: 'https://images.unsplash.com/photo-1509319117193-57bab727e09d?w=600&h=400&fit=crop',
     affiliateProducts: [
       { name: 'Straight Leg Jeans', brand: 'Amazon', price: '$39', url: 'https://amzn.to/4rfVnSQ', tag: 'Best Overall', image: 'https://images.unsplash.com/photo-1541099649105-f69ad21f3246?w=200&h=200&fit=crop' },
       { name: 'Wide Leg Pants', brand: 'Amazon', price: '$38', url: 'https://amzn.to/3ZCaw4S', tag: 'Best for Curves', image: 'https://images.unsplash.com/photo-1594938298603-c8148c4dae35?w=200&h=200&fit=crop' },
@@ -864,7 +864,7 @@ export const guides: StyleGuide[] = [
     date: '2026-02-17',
     tag: 'Hot',
     emoji: '🌷',
-    image: '/images/guides/korean-fashion-trends-2026.png',
+    image: 'https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=600&h=400&fit=crop',
     affiliateProducts: [
       { name: 'Linen Blend Blazer', brand: 'Amazon', price: '$49', url: 'https://amzn.to/4rVjOFg', tag: 'Trend Pick', image: 'https://images.unsplash.com/photo-1591369822096-ffd140ec948f?w=200&h=200&fit=crop' },
       { name: 'Satin Midi Dress', brand: 'Amazon', price: '$42', url: 'https://amzn.to/4tH7kT9', image: 'https://images.unsplash.com/photo-1595777457583-95e059d581b8?w=200&h=200&fit=crop' },
@@ -881,7 +881,7 @@ export const guides: StyleGuide[] = [
     date: '2026-02-18',
     tag: 'Product Review',
     emoji: '👜',
-    image: '/images/guides/best-work-bags-under-100.png',
+    image: 'https://images.unsplash.com/photo-1584917865442-de89df76afd3?w=600&h=400&fit=crop',
     affiliateProducts: [
       { name: 'Professional Tote Bag', brand: 'Amazon', price: '$35', url: 'https://amzn.to/4anggFT', tag: 'Best Overall', image: 'https://images.unsplash.com/photo-1584917865442-de89df76afd3?w=200&h=200&fit=crop' },
       { name: 'Structured Blazer', brand: 'Amazon', price: '$49', url: 'https://amzn.to/4rVjOFg', tag: 'Style It With', image: 'https://images.unsplash.com/photo-1591369822096-ffd140ec948f?w=200&h=200&fit=crop' },
@@ -896,7 +896,7 @@ export const guides: StyleGuide[] = [
     date: '2026-02-18',
     tag: 'Budget',
     emoji: '💰',
-    image: '/images/guides/amazon-prime-fashion-deals-2026.png',
+    image: 'https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=600&h=400&fit=crop',
     affiliateProducts: [
       { name: 'Silk Camisole', brand: 'Amazon', price: '$25', url: 'https://amzn.to/3Mro3JB', tag: 'Best Quality', image: 'https://images.unsplash.com/photo-1564257631407-4deb1f99d992?w=200&h=200&fit=crop' },
       { name: 'Straight Leg Jeans', brand: 'Amazon', price: '$39', url: 'https://amzn.to/4rfVnSQ', image: 'https://images.unsplash.com/photo-1541099649105-f69ad21f3246?w=200&h=200&fit=crop' },
@@ -912,7 +912,7 @@ export const guides: StyleGuide[] = [
     date: '2026-02-18',
     tag: 'Guide',
     emoji: '🪄',
-    image: '/images/guides/how-to-build-minimalist-wardrobe.png',
+    image: 'https://images.unsplash.com/photo-1558171813-4c088753af8f?w=600&h=400&fit=crop',
     affiliateProducts: [
       { name: 'Classic White Camisole', brand: 'Amazon', price: '$25', url: 'https://amzn.to/3Mro3JB', tag: 'Wardrobe Essential', image: 'https://images.unsplash.com/photo-1564257631407-4deb1f99d992?w=200&h=200&fit=crop' },
       { name: 'Tailored Blazer', brand: 'Amazon', price: '$49', url: 'https://amzn.to/4rVjOFg', tag: 'Worth the Splurge', image: 'https://images.unsplash.com/photo-1591369822096-ffd140ec948f?w=200&h=200&fit=crop' },
@@ -928,7 +928,7 @@ export const guides: StyleGuide[] = [
     date: '2026-02-18',
     tag: 'Product Review',
     emoji: '👟',
-    image: '/images/guides/best-white-sneakers-women-2026.png',
+    image: 'https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?w=600&h=400&fit=crop',
     affiliateProducts: [
       { name: 'White Sneakers', brand: 'Amazon', price: '$45', url: 'https://amzn.to/3Mro7cj', tag: 'Best Overall', image: 'https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?w=200&h=200&fit=crop' },
       { name: 'Straight Leg Jeans', brand: 'Amazon', price: '$39', url: 'https://amzn.to/4rfVnSQ', tag: 'Best Pairing', image: 'https://images.unsplash.com/photo-1541099649105-f69ad21f3246?w=200&h=200&fit=crop' },
@@ -943,7 +943,7 @@ export const guides: StyleGuide[] = [
     date: '2026-02-18',
     tag: 'Comprehensive',
     emoji: '👩‍💼',
-    image: '/images/guides/professional-outfits-women-2026.png',
+    image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=600&h=400&fit=crop',
     affiliateProducts: [
       { name: 'Tailored Blazer', brand: 'Amazon', price: '$49', url: 'https://amzn.to/4rVjOFg', tag: 'Investment Piece', image: 'https://images.unsplash.com/photo-1591369822096-ffd140ec948f?w=200&h=200&fit=crop' },
       { name: 'Wide Leg Trousers', brand: 'Amazon', price: '$38', url: 'https://amzn.to/3ZCaw4S', tag: 'Best Value', image: 'https://images.unsplash.com/photo-1594938298603-c8148c4dae35?w=200&h=200&fit=crop' },
@@ -960,7 +960,7 @@ export const guides: StyleGuide[] = [
     date: '2026-02-18',
     tag: 'Comparison',
     emoji: '🤔',
-    image: '/images/guides/stitch-fix-vs-personal-stylist.png',
+    image: 'https://images.unsplash.com/photo-1552374196-1ab2a1c593e8?w=600&h=400&fit=crop',
     affiliateProducts: [
       { name: 'Build Your Own Style Kit', brand: 'Amazon', price: '$49', url: 'https://amzn.to/4rVjOFg', tag: 'DIY Pick', image: 'https://images.unsplash.com/photo-1591369822096-ffd140ec948f?w=200&h=200&fit=crop' },
       { name: 'Work Tote Bag', brand: 'Amazon', price: '$35', url: 'https://amzn.to/4anggFT', image: 'https://images.unsplash.com/photo-1584917865442-de89df76afd3?w=200&h=200&fit=crop' },
@@ -975,7 +975,7 @@ export const guides: StyleGuide[] = [
     date: '2026-02-18',
     tag: 'Product Review',
     emoji: '🧥',
-    image: '/images/guides/how-to-style-oversized-blazer.png',
+    image: 'https://images.unsplash.com/photo-1591369822096-ffd140ec948f?w=600&h=400&fit=crop',
     affiliateProducts: [
       { name: 'Classic Tailored Blazer', brand: 'Amazon', price: '$49', url: 'https://amzn.to/4rVjOFg', tag: 'Best Overall', image: 'https://images.unsplash.com/photo-1591369822096-ffd140ec948f?w=200&h=200&fit=crop' },
       { name: 'Wide Leg Pants (Pair With)', brand: 'Amazon', price: '$38', url: 'https://amzn.to/3ZCaw4S', image: 'https://images.unsplash.com/photo-1594938298603-c8148c4dae35?w=200&h=200&fit=crop' },
@@ -991,7 +991,7 @@ export const guides: StyleGuide[] = [
     date: '2026-02-18',
     tag: 'Essential',
     emoji: '🤝',
-    image: '/images/guides/what-to-wear-job-interview-2026.png',
+    image: 'https://images.unsplash.com/photo-1560264280-88b68371db39?w=600&h=400&fit=crop',
     affiliateProducts: [
       { name: 'Navy Tailored Blazer', brand: 'Amazon', price: '$49', url: 'https://amzn.to/4rVjOFg', tag: 'Corporate Pick', image: 'https://images.unsplash.com/photo-1591369822096-ffd140ec948f?w=200&h=200&fit=crop' },
       { name: 'Slim Dress Pants', brand: 'Amazon', price: '$38', url: 'https://amzn.to/3ZCaw4S', image: 'https://images.unsplash.com/photo-1594938298603-c8148c4dae35?w=200&h=200&fit=crop' },
@@ -1008,7 +1008,7 @@ export const guides: StyleGuide[] = [
     date: '2026-02-18',
     tag: 'Hot',
     emoji: '🔥',
-    image: '/images/guides/korean-fashion-trends-2026.png',
+    image: 'https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=600&h=400&fit=crop',
     affiliateProducts: [
       { name: 'Leather Jacket', brand: 'Amazon', price: '$59', url: 'https://amzn.to/4az8Vlh', tag: '#1 Must Have', image: 'https://images.unsplash.com/photo-1551028719-00167b16eac5?w=200&h=200&fit=crop' },
       { name: 'Cigarette Jeans', brand: 'Amazon', price: '$42', url: 'https://amzn.to/4kJhrTx', tag: 'Trending', image: 'https://images.unsplash.com/photo-1541099649105-f69ad21f3246?w=200&h=200&fit=crop' },
@@ -1026,7 +1026,7 @@ export const guides: StyleGuide[] = [
     date: '2026-02-18',
     tag: 'Trending',
     emoji: '👛',
-    image: '/images/guides/dark-feminine-aesthetic-guide-2026.png',
+    image: 'https://images.unsplash.com/photo-1509631179647-0177331693ae?w=600&h=400&fit=crop',
     affiliateProducts: [
       { name: 'Lace Midi Skirt', brand: 'Amazon', price: '$32', url: 'https://amzn.to/3OrVpsf', tag: 'Romantic Trend', image: 'https://images.unsplash.com/photo-1583496661160-fb5886a0uj7a?w=200&h=200&fit=crop' },
       { name: 'Quarter Zip Knit', brand: 'Amazon', price: '$35', url: 'https://amzn.to/40drBCf', tag: 'Runway Pick', image: 'https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?w=200&h=200&fit=crop' },
@@ -1045,7 +1045,7 @@ export const guides: StyleGuide[] = [
     date: '2026-02-19',
     tag: 'Product Review',
     emoji: '🏃‍♀️',
-    image: '/images/guides/best-running-shoes-women-2026.png',
+    image: 'https://images.unsplash.com/photo-1560769629-975ec94e6a86?w=600&h=400&fit=crop',
     affiliateProducts: [
       { name: 'Lightweight Running Shoes', brand: 'Amazon', price: '$65', url: 'https://amzn.to/3Mro7cj', tag: 'Best Overall', image: 'https://images.unsplash.com/photo-1560769629-975ec94e6a86?w=200&h=200&fit=crop' },
       { name: 'Cushioned Trail Runners', brand: 'Amazon', price: '$72', url: 'https://amzn.to/3OhrhzW', tag: 'Best for Trails', image: 'https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?w=200&h=200&fit=crop' },
@@ -1063,7 +1063,7 @@ export const guides: StyleGuide[] = [
     date: '2026-02-19',
     tag: 'Product Review',
     emoji: '💻',
-    image: '/images/guides/best-laptop-bags-women-2026.png',
+    image: 'https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=600&h=400&fit=crop',
     affiliateProducts: [
       { name: 'Leather Laptop Tote', brand: 'Amazon', price: '$58', url: 'https://amzn.to/4anggFT', tag: 'Best Overall', image: 'https://images.unsplash.com/photo-1584917865442-de89df76afd3?w=200&h=200&fit=crop' },
       { name: 'Laptop Backpack (Slim)', brand: 'Amazon', price: '$42', url: 'https://amzn.to/4qBF7dJ', tag: 'Best for Commute', image: 'https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=200&h=200&fit=crop' },
@@ -1081,7 +1081,7 @@ export const guides: StyleGuide[] = [
     date: '2026-02-19',
     tag: 'Guide',
     emoji: '🕶️',
-    image: '/images/guides/best-sunglasses-face-shape-2026.png',
+    image: 'https://images.unsplash.com/photo-1511499767150-a48a237f0083?w=600&h=400&fit=crop',
     affiliateProducts: [
       { name: 'Oversized Square Sunglasses', brand: 'Amazon', price: '$18', url: 'https://amzn.to/4tEIRhl', tag: 'Best for Round Face', image: 'https://images.unsplash.com/photo-1511499767150-a48a237f0083?w=200&h=200&fit=crop' },
       { name: 'Cat Eye Sunglasses', brand: 'Amazon', price: '$22', url: 'https://amzn.to/3Mro3JB', tag: 'Best for Oval Face', image: 'https://images.unsplash.com/photo-1473496169904-658ba7c44d8a?w=200&h=200&fit=crop' },
@@ -1099,7 +1099,7 @@ export const guides: StyleGuide[] = [
     date: '2026-02-19',
     tag: 'Viral',
     emoji: '🔥',
-    image: '/images/guides/winter-to-spring-transition-outfits-2026.png',
+    image: 'https://images.unsplash.com/photo-1483985988355-763728e1935b?w=600&h=400&fit=crop',
     affiliateProducts: [
       { name: 'Satin Pleated Skirt', brand: 'Amazon', price: '$26', url: 'https://amzn.to/3OrVpsf', tag: 'TikTok Viral', image: 'https://images.unsplash.com/photo-1583496661160-fb5886a0uj7a?w=200&h=200&fit=crop' },
       { name: 'Oversized Linen Shirt', brand: 'Amazon', price: '$28', url: 'https://amzn.to/4rUPDhk', tag: 'Most Versatile', image: 'https://images.unsplash.com/photo-1598554747436-c9293d6a588f?w=200&h=200&fit=crop' },
@@ -1117,7 +1117,7 @@ export const guides: StyleGuide[] = [
     date: '2026-02-19',
     tag: 'Seasonal',
     emoji: '☀️',
-    image: '/images/guides/vacation-outfits-women-2026.png',
+    image: 'https://images.unsplash.com/photo-1469504512102-900f29606341?w=600&h=400&fit=crop',
     affiliateProducts: [
       { name: 'Linen Wide Leg Pants', brand: 'Amazon', price: '$34', url: 'https://amzn.to/3ZCaw4S', tag: 'Summer Staple', image: 'https://images.unsplash.com/photo-1594938298603-c8148c4dae35?w=200&h=200&fit=crop' },
       { name: 'Cotton Sundress', brand: 'Amazon', price: '$29', url: 'https://amzn.to/4tH7kT9', tag: 'Best Seller', image: 'https://images.unsplash.com/photo-1572804013309-59a88b7e92f1?w=200&h=200&fit=crop' },
@@ -1136,7 +1136,7 @@ export const guides: StyleGuide[] = [
     date: '2026-02-20',
     tag: 'Pillar Guide',
     emoji: '💗',
-    image: '/images/guides/winter-to-spring-transition-outfits-2026.png',
+    image: 'https://images.unsplash.com/photo-1483985988355-763728e1935b?w=600&h=400&fit=crop',
     affiliateProducts: [
       { name: 'Wrap Maxi Dress', brand: 'Amazon', price: '$38', url: 'https://amzn.to/4tH7kT9', tag: 'Best Seller', image: 'https://images.unsplash.com/photo-1572804013309-59a88b7e92f1?w=200&h=200&fit=crop' },
       { name: 'High-Waist Wide Leg Pants', brand: 'Amazon', price: '$36', url: 'https://amzn.to/3ZCaw4S', tag: 'Most Flattering', image: 'https://images.unsplash.com/photo-1594938298603-c8148c4dae35?w=200&h=200&fit=crop' },
@@ -1154,7 +1154,7 @@ export const guides: StyleGuide[] = [
     date: '2026-02-20',
     tag: 'Trending',
     emoji: '🍂',
-    image: '/images/guides/dark-feminine-aesthetic-guide-2026.png',
+    image: 'https://images.unsplash.com/photo-1509631179647-0177331693ae?w=600&h=400&fit=crop',
     affiliateProducts: [
       { name: 'Chunky Knit Sweater', brand: 'Amazon', price: '$42', url: 'https://amzn.to/40drBCf', tag: 'Fall Essential', image: 'https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?w=200&h=200&fit=crop' },
       { name: 'Faux Leather Trousers', brand: 'Amazon', price: '$48', url: 'https://amzn.to/3ZCaw4S', tag: 'Trending', image: 'https://images.unsplash.com/photo-1594938298603-c8148c4dae35?w=200&h=200&fit=crop' },
@@ -1172,7 +1172,7 @@ export const guides: StyleGuide[] = [
     date: '2026-02-20',
     tag: 'Guide',
     emoji: '✨',
-    image: '/images/guides/petite-fashion-guide-2026.png',
+    image: 'https://images.unsplash.com/photo-1485968579580-b6d095142e6e?w=600&h=400&fit=crop',
     affiliateProducts: [
       { name: 'High-Waist Skinny Jeans', brand: 'Amazon', price: '$36', url: 'https://amzn.to/4rfVnSQ', tag: 'Best for Petite', image: 'https://images.unsplash.com/photo-1541099649105-f69ad21f3246?w=200&h=200&fit=crop' },
       { name: 'Midi Dress with Belt', brand: 'Amazon', price: '$34', url: 'https://amzn.to/4tH7kT9', tag: 'Elongating', image: 'https://images.unsplash.com/photo-1572804013309-59a88b7e92f1?w=200&h=200&fit=crop' },
@@ -1189,7 +1189,7 @@ export const guides: StyleGuide[] = [
     date: '2026-02-20',
     tag: 'Viral',
     emoji: '🛒',
-    image: '/images/guides/amazon-prime-fashion-deals-2026.png',
+    image: 'https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=600&h=400&fit=crop',
     affiliateProducts: [
       { name: 'Fleece Pullover Hoodie', brand: 'Amazon', price: '$32', url: 'https://amzn.to/40drBCf', tag: '#1 Best Seller', image: 'https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?w=200&h=200&fit=crop' },
       { name: 'Yoga Pants (High Waist)', brand: 'Amazon', price: '$28', url: 'https://amzn.to/3ZCaw4S', tag: 'Most Reviewed', image: 'https://images.unsplash.com/photo-1506629082955-511b1aa562c8?w=200&h=200&fit=crop' },
@@ -1207,7 +1207,7 @@ export const guides: StyleGuide[] = [
     date: '2026-02-20',
     tag: 'Popular',
     emoji: '👑',
-    image: '/images/guides/quiet-luxury-style-guide-2026.png',
+    image: 'https://images.unsplash.com/photo-1487222477894-8943e31ef7b2?w=600&h=400&fit=crop',
     affiliateProducts: [
       { name: 'Tailored Ponte Blazer', brand: 'Amazon', price: '$52', url: 'https://amzn.to/4rVjOFg', tag: 'Age-Elegant', image: 'https://images.unsplash.com/photo-1591369822096-ffd140ec948f?w=200&h=200&fit=crop' },
       { name: 'Straight Leg Jeans (Mid Rise)', brand: 'Amazon', price: '$42', url: 'https://amzn.to/4rfVnSQ', tag: 'Most Comfortable', image: 'https://images.unsplash.com/photo-1541099649105-f69ad21f3246?w=200&h=200&fit=crop' },
@@ -1224,7 +1224,7 @@ export const guides: StyleGuide[] = [
     date: '2026-02-20',
     tag: 'Product Review',
     emoji: '💪',
-    image: '/images/guides/best-gym-workout-outfits-women-2026.png',
+    image: 'https://images.unsplash.com/photo-1538805060514-97d9cc17730c?w=600&h=400&fit=crop',
     affiliateProducts: [
       { name: 'High-Waist Workout Leggings', brand: 'Amazon', price: '$32', url: 'https://amzn.to/3ZCaw4S', tag: 'Best Overall', image: 'https://images.unsplash.com/photo-1506629082955-511b1aa562c8?w=200&h=200&fit=crop' },
       { name: 'Seamless Sports Bra', brand: 'Amazon', price: '$22', url: 'https://amzn.to/3Mro3JB', tag: 'Top Rated', image: 'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=200&h=200&fit=crop' },
@@ -1242,7 +1242,7 @@ export const guides: StyleGuide[] = [
     date: '2026-02-20',
     tag: 'Hot',
     emoji: '🌴',
-    image: '/images/guides/vacation-outfits-women-2026.png',
+    image: 'https://images.unsplash.com/photo-1469504512102-900f29606341?w=600&h=400&fit=crop',
     affiliateProducts: [
       { name: 'Linen Button-Up Shirt Dress', brand: 'Amazon', price: '$38', url: 'https://amzn.to/4tH7kT9', tag: 'Vacation Staple', image: 'https://images.unsplash.com/photo-1572804013309-59a88b7e92f1?w=200&h=200&fit=crop' },
       { name: 'Bikini Set (Adjustable)', brand: 'Amazon', price: '$28', url: 'https://amzn.to/4rfVnSQ', tag: 'Best Seller', image: 'https://images.unsplash.com/photo-1562572159-4efd90232029?w=200&h=200&fit=crop' },
@@ -1260,7 +1260,7 @@ export const guides: StyleGuide[] = [
     date: '2026-02-20',
     tag: 'Viral',
     emoji: '🎵',
-    image: '/images/guides/korean-fashion-trends-2026.png',
+    image: 'https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=600&h=400&fit=crop',
     affiliateProducts: [
       { name: 'Ballet Flat (Square Toe)', brand: 'Amazon', price: '$38', url: 'https://amzn.to/3OhrhzW', tag: 'Balletcore', image: 'https://images.unsplash.com/photo-1543163521-1bf539c55dd2?w=200&h=200&fit=crop' },
       { name: 'Cashmere Blend Sweater', brand: 'Amazon', price: '$55', url: 'https://amzn.to/40drBCf', tag: 'Quiet Luxury', image: 'https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?w=200&h=200&fit=crop' },
@@ -1277,7 +1277,7 @@ export const guides: StyleGuide[] = [
     date: '2026-02-20',
     tag: 'Style Tips',
     emoji: '🧥',
-    image: '/images/guides/how-to-style-oversized-blazer.png',
+    image: 'https://images.unsplash.com/photo-1591369822096-ffd140ec948f?w=600&h=400&fit=crop',
     affiliateProducts: [
       { name: 'Oversized Blazer (Neutral)', brand: 'Amazon', price: '$49', url: 'https://amzn.to/4rVjOFg', tag: 'Hero Piece', image: 'https://images.unsplash.com/photo-1591369822096-ffd140ec948f?w=200&h=200&fit=crop' },
       { name: 'Biker Shorts', brand: 'Amazon', price: '$22', url: 'https://amzn.to/3ZCaw4S', tag: 'Style With', image: 'https://images.unsplash.com/photo-1506629082955-511b1aa562c8?w=200&h=200&fit=crop' },
@@ -1294,7 +1294,7 @@ export const guides: StyleGuide[] = [
     date: '2026-02-20',
     tag: 'Popular',
     emoji: '💒',
-    image: '/images/guides/best-dresses-for-wedding-guest-under-100.png',
+    image: 'https://images.unsplash.com/photo-1518609878373-06d740f60d8b?w=600&h=400&fit=crop',
     affiliateProducts: [
       { name: 'Floral Midi Wrap Dress', brand: 'Amazon', price: '$48', url: 'https://amzn.to/4tH7kT9', tag: 'Garden Wedding', image: 'https://images.unsplash.com/photo-1572804013309-59a88b7e92f1?w=200&h=200&fit=crop' },
       { name: 'Chiffon Maxi Dress', brand: 'Amazon', price: '$55', url: 'https://amzn.to/4rfVnSQ', tag: 'Formal Pick', image: 'https://images.unsplash.com/photo-1595777457583-95e059d581b8?w=200&h=200&fit=crop' },
@@ -1312,7 +1312,7 @@ export const guides: StyleGuide[] = [
     date: '2026-02-21',
     tag: 'Seasonal',
     emoji: '❄️',
-    image: '/images/guides/winter-fashion-essentials-2026.png',
+    image: 'https://images.unsplash.com/photo-1517841905240-472988babdf9?w=600&h=400&fit=crop',
     affiliateProducts: [
       { name: 'Wool Blend Coat', brand: 'Amazon', price: '$78', url: 'https://amzn.to/4kNVNxy', tag: 'Best Overall', image: 'https://images.unsplash.com/photo-1591047139829-d91aecb6caea?w=200&h=200&fit=crop' },
       { name: 'Cashmere Turtleneck Sweater', brand: 'Amazon', price: '$45', url: 'https://amzn.to/40drBCf', tag: 'Editor Pick', image: 'https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?w=200&h=200&fit=crop' },
@@ -1330,7 +1330,7 @@ export const guides: StyleGuide[] = [
     date: '2026-02-21',
     tag: 'Guide',
     emoji: '💼',
-    image: '/images/guides/business-casual-outfits-women-2026.png',
+    image: 'https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=600&h=400&fit=crop',
     affiliateProducts: [
       { name: 'Ponte Knit Blazer', brand: 'Amazon', price: '$52', url: 'https://amzn.to/4rVjOFg', tag: 'Best Overall', image: 'https://images.unsplash.com/photo-1591369822096-ffd140ec948f?w=200&h=200&fit=crop' },
       { name: 'Wide Leg Dress Pants', brand: 'Amazon', price: '$42', url: 'https://amzn.to/3ZCaw4S', tag: 'Office Staple', image: 'https://images.unsplash.com/photo-1594938298603-c8148c4dae35?w=200&h=200&fit=crop' },
@@ -1348,7 +1348,7 @@ export const guides: StyleGuide[] = [
     date: '2026-02-21',
     tag: 'Style Tips',
     emoji: '🎨',
-    image: '/images/guides/how-to-style-leather-jacket-women-2026.png',
+    image: 'https://images.unsplash.com/photo-1558769132-cb1aea458c5e?w=600&h=400&fit=crop',
     affiliateProducts: [
       { name: 'Color Block Sweater', brand: 'Amazon', price: '$35', url: 'https://amzn.to/40drBCf', tag: 'Top Rated', image: 'https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?w=200&h=200&fit=crop' },
       { name: 'Neutral Tone Midi Skirt', brand: 'Amazon', price: '$30', url: 'https://amzn.to/3OrVpsf', tag: 'Versatile', image: 'https://images.unsplash.com/photo-1583496661160-fb5886a0uj7a?w=200&h=200&fit=crop' },
@@ -1365,7 +1365,7 @@ export const guides: StyleGuide[] = [
     date: '2026-02-21',
     tag: 'Occasion Guide',
     emoji: '🥂',
-    image: '/images/guides/brunch-outfits-women-2026.png',
+    image: 'https://images.unsplash.com/photo-1469334031218-e382a71b716b?w=600&h=400&fit=crop',
     affiliateProducts: [
       { name: 'Floral Mini Dress', brand: 'Amazon', price: '$34', url: 'https://amzn.to/4tH7kT9', tag: 'Best Seller', image: 'https://images.unsplash.com/photo-1572804013309-59a88b7e92f1?w=200&h=200&fit=crop' },
       { name: 'Linen Co-ord Set', brand: 'Amazon', price: '$45', url: 'https://amzn.to/3ZCaw4S', tag: 'Editor Pick', image: 'https://images.unsplash.com/photo-1594938298603-c8148c4dae35?w=200&h=200&fit=crop' },
@@ -1383,7 +1383,7 @@ export const guides: StyleGuide[] = [
     date: '2026-02-21',
     tag: 'Product Review',
     emoji: '👢',
-    image: '/images/guides/best-ankle-boots-women-2026.png',
+    image: 'https://images.unsplash.com/photo-1512374382149-233c42b6a83b?w=600&h=400&fit=crop',
     affiliateProducts: [
       { name: 'Chelsea Ankle Boots', brand: 'Amazon', price: '$58', url: 'https://amzn.to/3OhrhzW', tag: 'Best Overall', image: 'https://images.unsplash.com/photo-1543163521-1bf539c55dd2?w=200&h=200&fit=crop' },
       { name: 'Block Heel Ankle Boots', brand: 'Amazon', price: '$52', url: 'https://amzn.to/4rfVnSQ', tag: 'Best for Work', image: 'https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?w=200&h=200&fit=crop' },
@@ -1401,7 +1401,7 @@ export const guides: StyleGuide[] = [
     date: '2026-02-21',
     tag: 'Hot',
     emoji: '🎪',
-    image: '/images/guides/festival-outfits-women-2026.png',
+    image: 'https://images.unsplash.com/photo-1506157786151-b8491531f063?w=600&h=400&fit=crop',
     affiliateProducts: [
       { name: 'Crochet Maxi Dress', brand: 'Amazon', price: '$38', url: 'https://amzn.to/4tH7kT9', tag: 'Boho Vibes', image: 'https://images.unsplash.com/photo-1572804013309-59a88b7e92f1?w=200&h=200&fit=crop' },
       { name: 'Sequin Mini Skirt', brand: 'Amazon', price: '$28', url: 'https://amzn.to/3OrVpsf', tag: 'Rave Ready', image: 'https://images.unsplash.com/photo-1583496661160-fb5886a0uj7a?w=200&h=200&fit=crop' },
@@ -1419,7 +1419,7 @@ export const guides: StyleGuide[] = [
     date: '2026-02-21',
     tag: 'Trending',
     emoji: '✨',
-    image: '/images/guides/korean-fashion-trends-2026.png',
+    image: 'https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=600&h=400&fit=crop',
     affiliateProducts: [
       { name: 'Oversized Blazer Set', brand: 'Amazon', price: '$55', url: 'https://amzn.to/4rVjOFg', tag: 'K-Style Essential', image: 'https://images.unsplash.com/photo-1591369822096-ffd140ec948f?w=200&h=200&fit=crop' },
       { name: 'Mini Pleated Skirt', brand: 'Amazon', price: '$25', url: 'https://amzn.to/3OrVpsf', tag: 'Viral Pick', image: 'https://images.unsplash.com/photo-1583496661160-fb5886a0uj7a?w=200&h=200&fit=crop' },
@@ -1437,7 +1437,7 @@ export const guides: StyleGuide[] = [
     date: '2026-02-21',
     tag: 'Guide',
     emoji: '⏳',
-    image: '/images/guides/hourglass-figure-style-guide.png',
+    image: 'https://images.unsplash.com/photo-1496747611176-843222e1e57c?w=600&h=400&fit=crop',
     affiliateProducts: [
       { name: 'Wrap Midi Dress', brand: 'Amazon', price: '$38', url: 'https://amzn.to/4tH7kT9', tag: 'Most Flattering', image: 'https://images.unsplash.com/photo-1572804013309-59a88b7e92f1?w=200&h=200&fit=crop' },
       { name: 'Belted Trench Coat', brand: 'Amazon', price: '$65', url: 'https://amzn.to/4kNVNxy', tag: 'Editor Pick', image: 'https://images.unsplash.com/photo-1591047139829-d91aecb6caea?w=200&h=200&fit=crop' },
@@ -1454,7 +1454,7 @@ export const guides: StyleGuide[] = [
     date: '2026-02-21',
     tag: 'Style Guide',
     emoji: '✨',
-    image: '/images/guides/smart-casual-outfits-women-2026.png',
+    image: 'https://images.unsplash.com/photo-1551488831-00ddcb6c6bd3?w=600&h=400&fit=crop',
     affiliateProducts: [
       { name: 'Straight Leg Dark Jeans', brand: 'Amazon', price: '$40', url: 'https://amzn.to/4rfVnSQ', tag: 'Smart Casual Staple', image: 'https://images.unsplash.com/photo-1541099649105-f69ad21f3246?w=200&h=200&fit=crop' },
       { name: 'Silk Blend Blouse', brand: 'Amazon', price: '$35', url: 'https://amzn.to/3Mro3JB', tag: 'Elevated Basic', image: 'https://images.unsplash.com/photo-1564257631407-4deb1f99d992?w=200&h=200&fit=crop' },
@@ -1472,7 +1472,7 @@ export const guides: StyleGuide[] = [
     date: '2026-02-21',
     tag: 'Budget Picks',
     emoji: '💎',
-    image: '/images/guides/best-accessories-under-50-2026.png',
+    image: 'https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?w=600&h=400&fit=crop',
     affiliateProducts: [
       { name: 'Gold Layered Necklace Set', brand: 'Amazon', price: '$16', url: 'https://amzn.to/3Mro3JB', tag: 'Best Jewelry', image: 'https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?w=200&h=200&fit=crop' },
       { name: 'Reversible Leather Belt', brand: 'Amazon', price: '$22', url: 'https://amzn.to/4rfVnSQ', tag: 'Best Value', image: 'https://images.unsplash.com/photo-1594938298603-c8148c4dae35?w=200&h=200&fit=crop' },
@@ -1490,7 +1490,7 @@ export const guides: StyleGuide[] = [
     date: '2026-02-19',
     tag: 'Hot',
     emoji: '🤍',
-    image: '/images/guides/quiet-luxury-style-guide-2026.png',
+    image: 'https://images.unsplash.com/photo-1487222477894-8943e31ef7b2?w=600&h=400&fit=crop',
     affiliateProducts: [
       { name: 'Cashmere-Blend Crewneck Sweater', brand: 'Amazon', price: '$45', url: 'https://amzn.to/40drBCf', tag: 'Editor Pick', image: 'https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?w=200&h=200&fit=crop' },
       { name: 'Tailored Wide-Leg Trousers', brand: 'Amazon', price: '$42', url: 'https://amzn.to/3ZCaw4S', tag: 'Best Seller', image: 'https://images.unsplash.com/photo-1594938298603-c8148c4dae35?w=200&h=200&fit=crop' },
@@ -1508,7 +1508,7 @@ export const guides: StyleGuide[] = [
     date: '2026-02-21',
     tag: 'Style Tips',
     emoji: '🧥',
-    image: '/images/guides/how-to-style-leather-jacket-women-2026.png',
+    image: 'https://images.unsplash.com/photo-1558769132-cb1aea458c5e?w=600&h=400&fit=crop',
     affiliateProducts: [
       { name: 'AllSaints Balfern Leather Biker Jacket', brand: 'Amazon', price: '$499', url: 'https://amzn.to/4rVjOFg', tag: 'Best Overall', image: 'https://images.unsplash.com/photo-1591369822096-ffd140ec948f?w=200&h=200&fit=crop' },
       { name: 'Levi\'s Faux Leather Moto Jacket', brand: 'Amazon', price: '$89', url: 'https://amzn.to/3OhrhzW', tag: 'Budget Pick', image: 'https://images.unsplash.com/photo-1564257631407-4deb1f99d992?w=200&h=200&fit=crop' },
@@ -1526,7 +1526,7 @@ export const guides: StyleGuide[] = [
     date: '2026-02-19',
     tag: 'Trending',
     emoji: '🖤',
-    image: '/images/guides/dark-feminine-aesthetic-guide-2026.png',
+    image: 'https://images.unsplash.com/photo-1509631179647-0177331693ae?w=600&h=400&fit=crop',
     affiliateProducts: [
       { name: 'Satin Corset Top', brand: 'Amazon', price: '$32', url: 'https://amzn.to/4rfVnSQ', tag: 'Best Seller', image: 'https://images.unsplash.com/photo-1595777457583-95e059d581b8?w=200&h=200&fit=crop' },
       { name: 'High-Waist Faux Leather Pants', brand: 'Amazon', price: '$38', url: 'https://amzn.to/3ZCaw4S', tag: 'Must Have', image: 'https://images.unsplash.com/photo-1594938298603-c8148c4dae35?w=200&h=200&fit=crop' },
@@ -1544,7 +1544,7 @@ export const guides: StyleGuide[] = [
     date: '2026-02-19',
     tag: 'Hot',
     emoji: '\u{1F308}',
-    image: '/images/guides/dopamine-dressing-bold-color-outfits-2026.png',
+    image: 'https://images.unsplash.com/photo-1525562723836-dca67a71d5f1?w=600&h=400&fit=crop',
     affiliateProducts: [
       { name: 'Oversized Satin Blazer in Fuchsia', brand: 'The Drop', price: '$55', url: 'https://amzn.to/4rfVnSQ', tag: 'Editor Pick', image: 'https://images.unsplash.com/photo-1591369822096-ffd140ec948f?w=200&h=200&fit=crop' },
       { name: 'Wide-Leg Trousers in Cobalt Blue', brand: 'Amazon', price: '$38', url: 'https://amzn.to/3ZCaw4S', tag: 'Best Seller', image: 'https://images.unsplash.com/photo-1594938298603-c8148c4dae35?w=200&h=200&fit=crop' },
@@ -1562,7 +1562,7 @@ export const guides: StyleGuide[] = [
     date: '2026-02-19',
     tag: 'Hot',
     emoji: '\u{1F338}',
-    image: '/images/guides/winter-to-spring-transition-outfits-2026.png',
+    image: 'https://images.unsplash.com/photo-1483985988355-763728e1935b?w=600&h=400&fit=crop',
     affiliateProducts: [
       { name: 'Lightweight Trench Coat', brand: 'The Drop', price: '$65', url: 'https://amzn.to/4rfVnSQ', tag: 'Editor Pick', image: 'https://images.unsplash.com/photo-1591047139829-d91aecb6caea?w=200&h=200&fit=crop' },
       { name: 'Cotton-Cashmere Crewneck', brand: 'Amazon Essentials', price: '$32', url: 'https://amzn.to/3Mro3JB', tag: 'Best Value', image: 'https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?w=200&h=200&fit=crop' },
