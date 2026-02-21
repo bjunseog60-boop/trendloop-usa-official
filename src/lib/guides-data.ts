@@ -33,6 +33,19 @@ export const categories = [
 
 export const guides: StyleGuide[] = [
   {
+    slug: 'cottagecore-spring-outfits-that-are-taking-over-your-fyp',
+    title: 'Cottagecore Spring Outfits That Are Taking Over Your FYP',
+    category: 'Spring Fashion & Style Guide',
+    description: 'Your ultimate style guide to cottagecore spring outfits trending on TikTok and Instagram. Get styling tips, outfit ideas, and shop the essential pieces to nail this dreamy aesthetic.',
+    readTime: '10 min',
+    date: '2026-02-21',
+    tag: 'cottagecore spring outfits, spring style guide, cottagecore outfit ideas, how to wear cottagecore, spring fashion 2025',
+    emoji: '🌿',
+    image: 'https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=600&h=400&fit=crop',
+    affiliateProducts: [],
+  },
+
+  {
     slug: 'soft-girl-aesthetic-your-ultimate-style-guide--outfit-ideas-for-2025',
     title: 'Soft Girl Aesthetic: Your Ultimate Style Guide & Outfit Ideas for 2025',
     category: 'Fashion & Style',
