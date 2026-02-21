@@ -33,6 +33,19 @@ export const categories = [
 
 export const guides: StyleGuide[] = [
   {
+    slug: 'eclectic-grandpa-style-the-ultimate-style-guide-to-tiktoks-coziest-trend',
+    title: 'Eclectic Grandpa Style: The Ultimate Style Guide to TikTok's Coziest Trend',
+    category: 'Style Guide',
+    description: 'Eclectic grandpa style is TikTok's hottest trend. Get outfit ideas, styling tips, and shop the essentials to nail this cozy, vintage-inspired aesthetic.',
+    readTime: '10 min',
+    date: '2026-02-21',
+    tag: 'eclectic grandpa style',
+    emoji: '🧥',
+    image: 'https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=600&h=400&fit=crop',
+    affiliateProducts: [],
+  },
+
+  {
     slug: 'balletcore-essentials-your-ultimate-style-guide-to-the-prettiest-trend-on-tiktok',
     title: 'Balletcore Essentials: Your Ultimate Style Guide to the Prettiest Trend on TikTok',
     category: 'Fashion & Style',
