@@ -126,7 +126,7 @@ const posts = [
     date: 'Jan 30, 2026',
     time: '10 min',
     cat: 'Review',
-    image: 'https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=600&h=400&fit=crop',
+    image: 'https://images.unsplash.com/photo-1483985988355-763728e1935b?w=600&h=400&fit=crop',
     link: '/guides/stitch-fix-vs-personal-stylist',
   },
 ];
