@@ -33,6 +33,19 @@ export const categories = [
 
 export const guides: StyleGuide[] = [
   {
+    slug: 'techintegrated-streetwear-is-taking-over-your-fyp--heres-how-to-wear-it',
+    title: 'Tech-Integrated Streetwear Is Taking Over Your FYP — Here's How to Wear It',
+    category: 'Style Guide & Outfit Ideas',
+    description: 'Your ultimate style guide to tech-integrated streetwear — the TikTok-viral trend blending futuristic fabrics with street style. Get outfit ideas, styling tips, and shop the essentials.',
+    readTime: '10 min',
+    date: '2026-02-21',
+    tag: 'tech-integrated streetwear, outfit ideas, style guide, how to wear, techwear fashion, streetwear trends 2025, TikTok fashion',
+    emoji: '🖤',
+    image: 'https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=600&h=400&fit=crop',
+    affiliateProducts: [],
+  },
+
+  {
     slug: 'maximalist-vintage-revival-is-taking-over-your-fyp--heres-how-to-wear-it',
     title: 'Maximalist Vintage Revival Is Taking Over Your FYP — Here's How to Wear It',
     category: 'Style Guide',
