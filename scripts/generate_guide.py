@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 StyleMeDaily Auto Content Agent
-Generates new fashion guides using Claude API and adds them to the site.
+Generates new fashion guides using Claude API for text and Imagen 4.0 Ultra for images.
 """
 
 import anthropic
@@ -9,12 +9,18 @@ import json
 import re
 import subprocess
 import sys
+import os
+from datetime import datetime
 from pathlib import Path
+from google import genai
+from google.genai import types
 
 # ── Paths ──────────────────────────────────────────────────────────────────
 ROOT = Path(__file__).parent.parent
 GUIDES_DATA = ROOT / "src" / "lib" / "guides-data.ts"
 GUIDES_CONTENT = ROOT / "src" / "lib" / "guides-content-new.ts"
+IMAGES_DIR = ROOT / "public" / "images" / "guides"
+IMAGES_DIR.mkdir(parents=True, exist_ok=True)
 
 # ── Amazon affiliate URLs pool ─────────────────────────────────────────────
 AMZN_URLS = [
@@ -35,53 +41,50 @@ AMZN_URLS = [
     "https://amzn.to/4tH7kT9",
 ]
 
-# ── Unsplash image pool ────────────────────────────────────────────────────
-UNSPLASH_IMAGES = [
-    "https://images.unsplash.com/photo-1483985988355-763728e1935b?w=600&h=400&fit=crop",
-    "https://images.unsplash.com/photo-1487222477894-8943e31ef7b2?w=600&h=400&fit=crop",
-    "https://images.unsplash.com/photo-1469334031218-e382a71b716b?w=600&h=400&fit=crop",
-    "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=600&h=400&fit=crop",
-    "https://images.unsplash.com/photo-1509631179647-0177331693ae?w=600&h=400&fit=crop",
-    "https://images.unsplash.com/photo-1558769132-cb1aea458c5e?w=600&h=400&fit=crop",
-    "https://images.unsplash.com/photo-1496747611176-843222e1e57c?w=600&h=400&fit=crop",
-    "https://images.unsplash.com/photo-1551488831-00ddcb6c6bd3?w=600&h=400&fit=crop",
-    "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=600&h=400&fit=crop",
-    "https://images.unsplash.com/photo-1517841905240-472988babdf9?w=600&h=400&fit=crop",
-    "https://images.unsplash.com/photo-1506157786151-b8491531f063?w=600&h=400&fit=crop",
-    "https://images.unsplash.com/photo-1512374382149-233c42b6a83b?w=600&h=400&fit=crop",
-    "https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?w=600&h=400&fit=crop",
-    "https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=600&h=400&fit=crop",
-]
-
-THUMB_IMAGES = [
-    "https://images.unsplash.com/photo-1591369822096-ffd140ec948f?w=200&h=200&fit=crop",
-    "https://images.unsplash.com/photo-1594938298603-c8148c4dae35?w=200&h=200&fit=crop",
-    "https://images.unsplash.com/photo-1564257631407-4deb1f99d992?w=200&h=200&fit=crop",
-    "https://images.unsplash.com/photo-1543163521-1bf539c55dd2?w=200&h=200&fit=crop",
-    "https://images.unsplash.com/photo-1584917865442-de89df76afd3?w=200&h=200&fit=crop",
-    "https://images.unsplash.com/photo-1572804013309-59a88b7e92f1?w=200&h=200&fit=crop",
-    "https://images.unsplash.com/photo-1541099649105-f69ad21f3246?w=200&h=200&fit=crop",
-    "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?w=200&h=200&fit=crop",
-    "https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?w=200&h=200&fit=crop",
-    "https://images.unsplash.com/photo-1506629082955-511b1aa562c8?w=200&h=200&fit=crop",
-]
-
-
 def escape_ts(s: str) -> str:
     """Escape single quotes for TypeScript string literals."""
     return s.replace("\\", "\\\\").replace("'", "\\'")
-
 
 def get_existing_slugs() -> list[str]:
     """Read existing guide slugs from guides-data.ts."""
     content = GUIDES_DATA.read_text(encoding="utf-8")
     return re.findall(r"slug:\s*'([^']+)'", content)
 
+def generate_imagen_image(gemini_client, prompt: str, slug: str, suffix: str, aspect_ratio: str = "16:9") -> str:
+    """Generate an image using Imagen 4 Ultra and save it locally."""
+    print(f"🎨 Generating Imagen 4.0 Ultra image for: {prompt[:50]}...")
+    model_name = "imagen-4.0-ultra-generate-001"
+    
+    try:
+        response = gemini_client.models.generate_images(
+            model=model_name,
+            prompt=prompt,
+            config=types.GenerateImagesConfig(
+                number_of_images=1,
+                output_mime_type="image/jpeg",
+                aspect_ratio=aspect_ratio,
+            )
+        )
+        
+        if response.generated_images:
+            image_data = response.generated_images[0].image.image_bytes
+            filename = f"{slug}-{suffix}.jpg"
+            filepath = IMAGES_DIR / filename
+            with open(filepath, "wb") as f:
+                f.write(image_data)
+            print(f"✅ Saved image to {filepath}")
+            return f"/images/guides/{filename}"
+        else:
+            print("⚠️ No image returned from Imagen API.")
+    except Exception as e:
+        print(f"❌ Error generating image: {e}")
+    
+    return "https://images.unsplash.com/photo-1591047139829-d91aecb6caea?w=600&h=400&fit=crop"
 
-def generate_guide_json(client: anthropic.Anthropic, existing_slugs: list[str]) -> dict:
-    """Call Claude API to generate a new unique fashion guide."""
+def generate_guide_json(client, existing_slugs: list[str]) -> dict:
+    """Call Gemini API to generate a new unique fashion guide optimized for Amazon affiliates."""
 
-    prompt = f"""You are a fashion content strategist for StyleMeDaily, a women's fashion guide website.
+    prompt = f"""You are an elite fashion content strategist for StyleMeDaily. Your goal is to drive massive organic traffic and maximize Amazon Affiliate conversions.
 
 Generate ONE new SEO-optimized fashion guide. Return ONLY valid JSON, no other text.
 
@@ -91,29 +94,29 @@ EXISTING SLUGS (must NOT duplicate any of these):
 Use this EXACT JSON structure:
 {{
   "slug": "unique-kebab-case-slug-2026",
-  "title": "Full SEO-Optimized Title (include year if relevant)",
+  "title": "High-Click-Through SEO Title (Include Year if relevant)",
   "category": "workwear",
-  "description": "SEO meta description under 155 characters. Include key search terms.",
+  "description": "SEO meta description under 155 characters designed to get clicks.",
   "readTime": "12 min",
-  "date": "2026-02-21",
+  "date": "{datetime.now().strftime('%Y-%m-%d')}",
   "tag": "Guide",
   "emoji": "👗",
-  "image_index": 0,
+  "hero_image_prompt": "A detailed, photorealistic prompt for an AI image generator (Imagen 4) for the main cover image. Feature a high-fashion editorial look related to the topic. End the prompt with 'Typography text overlay reading StyleMeDaily'.",
   "affiliateProducts": [
     {{
-      "name": "Product Name",
+      "name": "Specific Amazon Product Name (e.g. Levi's Ribcage Straight Ankle Jeans)",
       "price": "$XX",
       "url_index": 0,
       "tag": "Best Overall",
-      "image_index": 0
+      "product_image_prompt": "A photorealistic product photography shot on a clean white background of [product name], studio lighting, e-commerce style, 4k."
     }}
   ],
   "content": [
     {{
-      "heading": "Section Heading",
+      "heading": "Catchy Section Heading",
       "paragraphs": [
-        "Detailed paragraph 1 with 80+ words of genuine fashion advice...",
-        "Detailed paragraph 2 with 80+ words..."
+        "Highly engaging, expert fashion advice paragraph... (80+ words)",
+        "Another paragraph that builds desire for the recommended styles..."
       ]
     }}
   ]
@@ -122,50 +125,47 @@ Use this EXACT JSON structure:
 RULES:
 - category must be one of: workwear, casual, date-night, seasonal, body-type, budget, occasion
 - tag must be one of: Guide, Product Review, Trending, Hot, Pillar Guide, Viral, Style Tips, Seasonal, Popular, Budget Picks
-- Include exactly 4-5 affiliate products (use url_index 0-{len(AMZN_URLS)-1})
-- Include exactly 5 content sections, each with 2-3 detailed paragraphs (80+ words each)
-- Content must be genuinely useful SEO-optimized fashion advice
-- slug must be unique and descriptive, not in existing list
-- image_index for guide: 0-{len(UNSPLASH_IMAGES)-1}
-- image_index for products: 0-{len(THUMB_IMAGES)-1}
+- Include exactly 4 affiliate products (use url_index 0 to {len(AMZN_URLS)-1}). Make the product names sound like real, highly-searched Amazon fashion items (e.g., 'Chunky Gold Hoop Earrings', 'Oversized Boyfriend Blazer').
+- Include exactly 5 content sections, each with 2-3 detailed paragraphs (80+ words each). Write compelling copy that makes people want to buy the looks.
+- slug must be unique and descriptive, not in existing list.
+- MUST RETURN VALID JSON ONLY.
 
-Pick a fresh fashion topic not covered by existing slugs. Ideas:
-maternity fashion, boho style, color seasons analysis, smart packing,
-office party outfits, cocktail attire, tropical vacation, winter accessories,
-sustainable fashion, 30s fashion, capsule wardrobe beginners, linen fashion,
-blazer dress, jumpsuit styling, leather jacket outfits, maxi dress styling,
-palazzo pants, wide leg jeans, trench coat outfits, turtleneck outfits,
-midi skirt outfits, denim outfit ideas, evening bags, work from home outfits"""
+Pick a fresh, highly-searchable fashion topic. Ideas:
+old money aesthetic on a budget, airport outfit ideas, what to wear to a spring wedding, 
+capsule wardrobe for work, european summer outfits, how to style a blazer, minimalist wardrobe essentials."""
 
-    response = client.messages.create(
-        model="claude-opus-4-6",
-        max_tokens=4000,
-        messages=[{"role": "user", "content": prompt}],
+    response = client.models.generate_content(
+        model="gemini-2.5-pro",
+        contents=prompt,
     )
 
-    text = response.content[0].text
-    # Extract JSON from response (handle markdown code blocks)
+    text = response.text
+    # Extract JSON from response
     json_match = re.search(r"```(?:json)?\s*(\{[\s\S]*?\})\s*```", text)
     if json_match:
         return json.loads(json_match.group(1))
-    # Try raw JSON
     json_match = re.search(r"\{[\s\S]*\}", text)
     if json_match:
         return json.loads(json_match.group())
-    raise ValueError(f"No valid JSON in Claude response:\n{text[:500]}")
+    raise ValueError(f"No valid JSON in Gemini response:\n{text[:500]}")
 
 
-def resolve_urls(guide: dict) -> dict:
-    """Replace index references with actual URLs."""
-    guide["image"] = UNSPLASH_IMAGES[guide.get("image_index", 0) % len(UNSPLASH_IMAGES)]
-    guide.pop("image_index", None)
+def resolve_urls_and_generate_images(guide: dict, gemini_client) -> dict:
+    """Generate images via Imagen 4 and resolve Amazon URLs."""
+    slug = guide["slug"]
+    
+    # Generate hero image (16:9)
+    hero_prompt = guide.pop("hero_image_prompt", f"High fashion editorial photography for {guide['title']}")
+    guide["image"] = generate_imagen_image(gemini_client, hero_prompt, slug, "hero", "16:9")
 
-    for p in guide["affiliateProducts"]:
+    # Process products and generate 1:1 thumbnails
+    for i, p in enumerate(guide["affiliateProducts"]):
         p["url"] = AMZN_URLS[p.get("url_index", 0) % len(AMZN_URLS)]
-        p["image"] = THUMB_IMAGES[p.get("image_index", 0) % len(THUMB_IMAGES)]
         p["brand"] = "Amazon"
         p.pop("url_index", None)
-        p.pop("image_index", None)
+        
+        prod_prompt = p.pop("product_image_prompt", f"Product photography on white background of {p['name']}")
+        p["image"] = generate_imagen_image(gemini_client, prod_prompt, slug, f"prod{i}", "1:1")
 
     return guide
 
@@ -215,7 +215,6 @@ def format_guide_content_ts(guide: dict) -> str:
 def insert_guide_into_data_file(guide_ts: str):
     """Insert guide entry into guides-data.ts before the closing ];"""
     content = GUIDES_DATA.read_text(encoding="utf-8")
-    # Insert before the closing `];` followed by the export functions
     marker = "];\n\nexport function getGuideBySlug"
     if marker not in content:
         raise ValueError("Could not find insertion point in guides-data.ts")
@@ -229,7 +228,6 @@ def insert_guide_into_content_file(content_ts: str):
     marker = "\n};\n"
     if marker not in content:
         raise ValueError("Could not find insertion point in guides-content-new.ts")
-    # Insert before the last };
     last_idx = content.rfind(marker)
     updated = content[:last_idx] + content_ts + content[last_idx:]
     GUIDES_CONTENT.write_text(updated, encoding="utf-8")
@@ -239,9 +237,9 @@ def git_commit_and_push(slug: str, title: str):
     """Commit and push the new guide."""
     subprocess.run(["git", "config", "user.email", "agent@stylemedaily.com"], check=True, cwd=ROOT)
     subprocess.run(["git", "config", "user.name", "StyleMeDaily Content Agent"], check=True, cwd=ROOT)
-    subprocess.run(["git", "add", str(GUIDES_DATA), str(GUIDES_CONTENT)], check=True, cwd=ROOT)
+    subprocess.run(["git", "add", "."], check=True, cwd=ROOT)
     subprocess.run(
-        ["git", "commit", "-m", f"feat: auto-generate guide '{title}' [{slug}]"],
+        ["git", "commit", "-m", f"feat: auto-generate guide '{title}' [{slug}] with Imagen 4"],
         check=True, cwd=ROOT,
     )
     subprocess.run(["git", "pull", "--rebase", "origin", "main"], check=True, cwd=ROOT)
@@ -250,20 +248,22 @@ def git_commit_and_push(slug: str, title: str):
 
 
 def main():
-    print("🤖 StyleMeDaily Content Agent starting...")
+    print("🤖 StyleMeDaily Content Agent (Premium Edition) starting...")
 
-    client = anthropic.Anthropic()  # reads ANTHROPIC_API_KEY from env
+    # Initialize clients
+    gemini_client = genai.Client(vertexai=True, project="fashion-money-maker", location="us-central1")
 
     existing_slugs = get_existing_slugs()
     print(f"📚 Found {len(existing_slugs)} existing guides")
 
-    print("✍️  Generating new guide with Claude...")
-    guide_raw = generate_guide_json(client, existing_slugs)
-    guide = resolve_urls(guide_raw)
+    print("✍️  Generating new SEO-optimized guide with Gemini 3.1 Pro...")
+    guide_raw = generate_guide_json(gemini_client, existing_slugs)
+    
+    print("📸 Generating Amazon-style product & hero images with Imagen 4.0 Ultra...")
+    guide = resolve_urls_and_generate_images(guide_raw, gemini_client)
 
-    print(f"📝 Generated: '{guide['title']}' [{guide['slug']}]")
+    print(f"📝 Finalized: '{guide['title']}' [{guide['slug']}]")
 
-    # Validate slug is unique
     if guide["slug"] in existing_slugs:
         print(f"❌ Duplicate slug detected: {guide['slug']}. Aborting.")
         sys.exit(1)
@@ -273,10 +273,10 @@ def main():
 
     insert_guide_into_data_file(guide_data_ts)
     insert_guide_into_content_file(guide_content_ts)
-    print("📂 Files updated successfully")
+    print("📂 Content files updated successfully")
 
     git_commit_and_push(guide["slug"], guide["title"])
-    print("🚀 New guide is live!")
+    print("🚀 Premium guide is live!")
 
 
 if __name__ == "__main__":

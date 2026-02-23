@@ -23,7 +23,7 @@ else:
 gemini_client = genai.Client(vertexai=True, project="fashion-money-maker", location="us-central1")
 
 GEMINI_MODEL = "gemini-3.1-pro"
-IMAGE_MODEL = "gemini-3-pro-image"
+IMAGE_MODEL = "imagen-3.0-generate-001"
 
 # Auto-detect environment (Windows local vs Linux VM)
 if sys.platform == "win32":
@@ -83,7 +83,7 @@ def post_to_twitter(title, slug):
             access_token=TWITTER_CONFIG["access_token"],
             access_token_secret=TWITTER_CONFIG["access_token_secret"]
         )
-        tweet_text = f"✨ New Style Guide: {title}\n\nCheck out the latest 2026 fashion trends on StyleMeDaily! 👗✨\n\nhttps://stylemedaily.com/guides/{slug}\n\n#FashionTrends #StyleInspo #2026Fashion"
+        tweet_text = f"✨ New Style Guide: {title}\n\nCheck out the latest 2026 fashion trends on StyleMeDaily! 👗✨\n\nhttps://stylemedaily.org/guides/{slug}\n\n#FashionTrends #StyleInspo #2026Fashion"
         response = twitter_client.create_tweet(text=tweet_text)
         print(f"Successfully posted to Twitter: {response.data['id']}")
         return True
