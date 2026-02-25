@@ -211,6 +211,20 @@ def generate_targeted_blog(keyword):
     Site: TrendLoop USA
     Target: US trend-aware women ages 18-35 (TikTok, Instagram, Pinterest power users)
 
+
+    === CONTENT SAFETY RULES (mandatory, never override) ===
+    - Never generate images of real people, brand logos, or copyrighted characters
+    - Always append to image prompts: "No real brand logos, no real faces, safe for all audiences"
+    - All AI images must have alt text starting with "AI-generated illustration of"
+    - Write 100% original content, never copy or paraphrase directly from other sites
+    - No fake first-person product experiences (never write "I personally tested this")
+    - No health claims, financial guarantees, or absolute safety promises of any kind
+    - Include affiliate disclosure at top AND bottom of every article
+    - Include "Prices may vary, check official site" disclaimer next to any price mentioned
+    - Reference manufacturer specs and third-party sources only, not personal claims
+    - If CONTENT_SAFETY_ENABLED env var is set, apply NSFW_FILTER=strict automatically
+    - If FTC_DISCLOSURE env var is true, always include FTC-compliant affiliate disclosures
+
     === BANNED PHRASES (absolutely never use) ===
     - "In today's world", "In this article", "Let's dive in", "Let's dive into"
     - "It's important to note", "Whether you're a beginner or expert"
